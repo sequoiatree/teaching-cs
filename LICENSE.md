@@ -1,0 +1,1 @@
+All content on this repository is protected under a [Creative Commons BY 4.0 license](https://creativecommons.org/licenses/by/4.0/).
