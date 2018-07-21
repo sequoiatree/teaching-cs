@@ -5,10 +5,10 @@ SEMESTER = {
     'CLASS_NAME': 'Introduction to Teaching Computer Science',
     'YEAR': '2018',
     'TERM': 'Fall',
-    'INSTRUCTOR': render_list('Instructor', 'Instructors', [
+    'INSTRUCTOR': render_list([
         'Christopher Hunn',
         'Sequoia Eyzaguirre',
-    ]),
+    ], 'Instructor', 'Instructors'),
 }
 
 CURRICULUM = [

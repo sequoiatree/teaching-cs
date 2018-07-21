@@ -24,12 +24,18 @@ def pad(num, length):
     text_num = str(num)
     return ''.join(('0' * (length - len(text_num)), text_num))
 
-def render_list(singular, plural, elements):
-    base = '{}: {}'
+def render_list(elements, singular=None, plural=None):
     if len(elements) == 1:
-        return base.format(singular, elements[0])
+        text = elements[0]
+    elif len(elements) == 2:
+        text = f'{elements[0]} and {elements[1]}'
     else:
-        return base.format(plural, ', '.join(elements))
+        text = '{}, and {}'.format(', '.join(elements[:-1]), elements[-1])
+    if singular or plural:
+        assert singular and plural, 'Please specify and singular and plural base.'
+        return '{}: {}'.format(singular if len(elements) == 1 else plural, text)
+    else:
+        return text
 
 def join_markdown(content):
     return ''.join(content)

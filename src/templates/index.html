@@ -14,5 +14,21 @@
   </subtitle>
 </div>
 <br/><br/>
-testing
+TESTING
+<table id="calendar" class="table" cellpadding="5px">
+  <tbody>
+    <tr>
+      <th>Topic</th>
+      <th>Reading</th>
+      <th>Homework</th>
+      <th>Journal Prompt</th>
+    </tr>
+    {% for week in WEEKS %}
+      <td>{{ week.title }}</td>
+      <td><a href="{{ url_for(week.resources['readings']) }}">test</a></td>
+      <td><a href="{{ url_for(week.resources['homework']) }}">test</a></td>
+      <td><a href="{{ url_for(week.resources['journal']) }}">test</a></td>
+    {% endfor %}
+  </tbody>
+</table>
 {% endblock %}

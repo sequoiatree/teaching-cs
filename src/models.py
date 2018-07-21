@@ -10,6 +10,7 @@ class Week():
         self.number = number
         self.path = f'weeks/week-{pad(self.number, 2)}'
         self.topics = [Topic(topic) for topic in topics]
+        self.title = render_list([topic.title for topic in self.topics])
         self.resources = {type: self.load_resource(type) for type in RESOURCE_TYPES}
 
     def load_resource(self, type):
