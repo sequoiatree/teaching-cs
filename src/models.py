@@ -1,4 +1,4 @@
-from os import makedirs
+from os import listdir, makedirs
 from os.path import join
 
 from semester import CURRICULUM
@@ -23,9 +23,10 @@ class Week():
                 in_content = join_markdown([read(in_file) for in_file in in_files])
                 out_content = template.replace(
                     '{{ CONTENT }}',
-                    parse_markdown(in_content)
+                    in_content
                 )
-                write(out_file, out_content)
+                makedirs(out_dir, exist_ok=True)
+                write(join(out_dir, out_file), out_content)
             return self.renderer(type)
         else:
             return None

@@ -14,7 +14,7 @@ def make_template(week, type):
     @app.route(f'/{week.route(type)}.html')
     @rename(week.renderer(type))
     def render_resource():
-        return render_template(week.template(type), resource=resource)
+        return render_template(week.template(type), week=week, type=type)
 
 @app.route('/')
 def render_index():

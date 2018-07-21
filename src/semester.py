@@ -25,3 +25,5 @@ CURRICULUM = [
     ['material-design'],
     ['conclusion'],
 ]
+
+CURRICULUM = [['socratic-method']]
