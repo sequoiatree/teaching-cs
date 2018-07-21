@@ -1,12 +1,13 @@
 .title {
   display: inline;
-  font-size: 30pt;
+  font-size: 20pt;
   font-weight: 500;
   color: black;
 }
 
 subtitle {
-  font-size: 17pt;
+  font-size: 15pt;
+  font-style: italic;
   color: black;
 }
 

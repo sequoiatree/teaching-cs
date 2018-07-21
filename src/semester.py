@@ -3,6 +3,8 @@ from utils import *
 SEMESTER = {
     'CLASS_CODE': 'CS 370',
     'CLASS_NAME': 'Introduction to Teaching Computer Science',
+    'YEAR': '2018',
+    'TERM': 'Fall',
     'INSTRUCTOR': render_list('Instructor', 'Instructors', [
         'Christopher Hunn',
         'Sequoia Eyzaguirre',
@@ -26,4 +28,4 @@ CURRICULUM = [
     ['conclusion'],
 ]
 
-CURRICULUM = [['socratic-method']]
+CURRICULUM = [['socratic-method']] # TESTING PURPOSES

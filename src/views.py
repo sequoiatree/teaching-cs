@@ -1,7 +1,7 @@
 from flask import render_template
 
 from app import app
-from models import WEEKS
+from models import RESOURCE_TYPES, WEEKS
 from semester import SEMESTER
 
 def rename(name):
@@ -25,6 +25,5 @@ def render_policies():
     return render_template('policies.html')
 
 for week in WEEKS:
-    make_template(week, 'homework')
-    make_template(week, 'readings')
-    make_template(week, 'journal')
+    for type in RESOURCE_TYPES:
+        make_template(week, type)
