@@ -1,1 +1,1 @@
-Socratic Method
+READINGS HERE

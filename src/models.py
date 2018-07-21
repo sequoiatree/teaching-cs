@@ -4,6 +4,8 @@ from os.path import join
 from semester import CURRICULUM
 from utils import *
 
+CURRICULUM_DIR = 'curriculum'
+
 class Week():
 
     def __init__(self, number, topics):
@@ -19,6 +21,7 @@ class Week():
         if in_files:
             out_dir = self.path
             out_file = self.template(type)
+            makedirs(out_dir, exist_ok=True)
             if out_file not in listdir(out_dir):
                 template = read(f'templates/{type}.html')
                 in_content = join_markdown([read(in_file) for in_file in in_files])
@@ -26,7 +29,6 @@ class Week():
                     '{{ CONTENT }}',
                     in_content
                 )
-                makedirs(out_dir, exist_ok=True)
                 write(join(out_dir, out_file), out_content)
             return self.renderer(type)
         else:
@@ -44,15 +46,21 @@ class Week():
 class Topic():
 
     def __init__(self, topic):
-        self.path = join('curriculum', topic)
+        self.path = join(CURRICULUM_DIR, topic)
         self.title = read(join(self.path, 'meta.txt'))
-        self.chapter = read(join(self.path, 'chapter.txt'))
+        self.chapterr = self.load_from_file('chapter.txt')
         self.resources = self.load_resources()
+
+    def load_from_file(self, file):
+        if file in listdir(self.path):
+            return read(join(self.path, file))
+        else:
+            return None
 
     def load_resources(self):
         dir_files = listdir(self.path)
         return {type for type in RESOURCE_TYPES if f'{type}.md' in dir_files}
 
-RESOURCE_TYPES = {'homework', 'readings', 'journal'}
+RESOURCE_TYPES = ['readings', 'homework', 'journal']
 
 WEEKS = [Week(number, topics) for number, topics in enumerate(CURRICULUM)]

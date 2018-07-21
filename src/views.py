@@ -18,7 +18,7 @@ def make_template(week, type):
 
 @app.route('/')
 def render_index():
-    return render_template('index.html', WEEKS=WEEKS, **SEMESTER)
+    return render_template('index.html', WEEKS=WEEKS, RESOURCE_TYPES=RESOURCE_TYPES, **SEMESTER)
 
 @app.route('/policies')
 def render_policies():

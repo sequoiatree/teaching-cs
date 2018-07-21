@@ -9,23 +9,22 @@ SEMESTER = {
         'Christopher Hunn',
         'Sequoia Eyzaguirre',
     ], 'Instructor', 'Instructors'),
+    'PIAZZA': '',
 }
 
 CURRICULUM = [
     ['introduction', 'socratic-method'],
-    ['learning-models'],
+    ['learning-models', 'blooms-taxonomy'],
     ['misconception-theory', '2-sigma'],
     ['memory', 'growth-mindset'],
     ['teaching-recursion'],
     ['setting-goals'],
     ['guest-speaker'],
-    ['midterm'],
+    ['midterm', 'applying-to-staff'],
     ['group-teaching-exercise'],
-    ['group-teaching-models', 'gps-syndrome'],
+    ['group-teaching-techniques', 'gps-syndrome'],
     ['imposter-syndrome', 'stereotype-threat'],
     ['diversity'],
-    ['material-design'],
+    ['designing-resources'],
     ['conclusion'],
 ]
-
-CURRICULUM = [['socratic-method']] # TESTING PURPOSES

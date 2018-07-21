@@ -24,10 +24,18 @@ TESTING
       <th>Journal Prompt</th>
     </tr>
     {% for week in WEEKS %}
-      <td>{{ week.title }}</td>
-      <td><a href="{{ url_for(week.resources['readings']) }}">test</a></td>
-      <td><a href="{{ url_for(week.resources['homework']) }}">test</a></td>
-      <td><a href="{{ url_for(week.resources['journal']) }}">test</a></td>
+      <tr>
+        <td>{{ week.title }}</td>
+        {% for type in RESOURCE_TYPES %}
+          <td>
+            {% if week.resources[type] %}
+              <a href="{{ url_for(week.resources[type]) }}">test</a>
+            {% else %}
+              Nada
+            {% endif %}
+          </td>
+        {% endfor %}
+      </tr>
     {% endfor %}
   </tbody>
 </table>
