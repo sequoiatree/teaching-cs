@@ -1,0 +1,42 @@
+{% import 'include.html' as include %}
+
+<!DOCTYPE HTML>
+
+<html>
+
+  <head>
+    <title>{% block title %}CS 370{% endblock %}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}?version=1">
+    {{ include.css(("https://fonts.googleapis.com/css?family=Raleway:400,500",)) }}
+    {{ include.static_css(('main', 'navbar')) }}
+    {{ include.js(("https://code.jquery.com/jquery-3.3.1.slim.min.js",)) }}
+    {{ include.static_js(('main',)) }}
+    {% block head %}
+    {% endblock %}
+  </head>
+
+  <div id="navbar" class="navbar">
+    <div class="page">
+      <a href="{{ url_for('render_index') }}">CS 370</a>
+      <a href="http://cs370scheduler.org">Scheduler</a>
+      <a href="{{ url_for('render_policies') }}">Policies</a>
+      <a href="javascript:void(0);" class="icon"
+         onclick="toggleClass('navbar', 'navbar', 'responsive');">
+        &#9776;
+      </a>
+    </div>
+  </div>
+
+  <body>
+    <div class="page content">
+      {% block content %}
+      {% endblock %}
+      <br><br>
+    </div>
+    {% block script %}
+    {% endblock %}
+  </body>
+
+</html>

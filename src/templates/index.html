@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{{ include.static_css(('text',)) }}
+{% endblock %}
+
+{% block content %}
+<div id="title">
+  <p class="title">{{ CLASS_CODE }}: {{ CLASS_NAME }}</p>
+  <hr/>
+  <subtitle>{{ INSTRUCTOR }}</subtitle>
+</div>
+<br/><br/>
+testing
+{% endblock %}

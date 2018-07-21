@@ -1,0 +1,6 @@
+Dark apple red:   #a32121
+Dark leaf green:  #1e8511
+Apple stem brown: #966d1c
+Storm grey:       #e6e6e6
+Cloud white:      #ecf0f1
+Stark white:      #ffffff
