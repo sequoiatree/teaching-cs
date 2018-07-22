@@ -7,6 +7,7 @@ from utils import *
 
 TOPICAL_DIR = 'curriculum/topical'
 WEEKLY_DIR = 'curriculum/weekly'
+PREV_DIR, NEXT_DIR = 'prev', 'next'
 
 class Week():
 
@@ -17,14 +18,26 @@ class Week():
         self.date = (META['SUNDAY_OF_FIRST_WEEK'] + timedelta(7) * self.number)
         self.topics = [Topic(topic) for topic in topics]
         self.title = render_list([topic.title for topic in self.topics])
+        self.files = {type: [] for type in RESOURCE_TYPES}
+
+    def load_files(self, type):
+        filename = f'{type}.md'
+        load_file = lambda week, path: week.files[type].append(join(path, filename))
+        for topic in self.topics:
+            topic_files = listdir(topic.path)
+            prev_files, next_files = join(topic.path, PREV_DIR), join(topic.path, NEXT_DIR)
+            if type in topic.resources:
+                load_file(self, topic.path)
+            if PREV_DIR in topic_files and filename in listdir(prev_files):
+                load_file(WEEKS[self.number - 1], prev_files)
+            if NEXT_DIR in topic_files and filename in listdir(next_files):
+                load_file(WEEKS[self.number + 1], next_files)
+
+    def load_resources(self):
         self.resources = {type: self.load_resource(type) for type in RESOURCE_TYPES}
 
     def load_resource(self, type):
-        weekly_file, filename = join(WEEKLY_DIR, self.directory), f'{type}.md'
-        in_files = [join(topic.path, filename)
-                    for topic in self.topics if type in topic.resources]
-        if self.directory in listdir(WEEKLY_DIR) and filename in listdir(weekly_file):
-            in_files.append(join(weekly_file, filename))
+        in_files = self.files[type]
         if in_files:
             out_dir = self.path
             out_file = self.template(type)
@@ -75,3 +88,10 @@ RESOURCE_TYPES = {
 }
 
 WEEKS = [Week(number, topics) for number, topics in enumerate(CURRICULUM)]
+
+for week in WEEKS:
+    for type in RESOURCE_TYPES:
+        week.load_files(type)
+
+for week in WEEKS:
+    week.load_resources()
