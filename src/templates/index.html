@@ -1,37 +1,46 @@
 {% extends 'base.html' %}
 
 {% block head %}
-{{ include.static_css(('text',)) }}
+{{ include.static_css(('text', 'table')) }}
 {% endblock %}
 
 {% block content %}
+
 <div id="title">
   <p class="title">{{ CLASS_CODE }}: {{ CLASS_NAME }}</p>
   <hr/>
-  <subtitle>
-    {{ INSTRUCTOR }}
-    <span style="float: right; padding-left: 1rem;">{{ TERM }} {{ YEAR }}</span>
-  </subtitle>
+  <subtitle>{{ TERM }} {{YEAR}} {{ INSTRUCTOR }}</subtitle>
 </div>
-<br/><br/>
-TESTING
+
+<br/>
+
+<p class="title">Announcements</p>
+<hr/>
+
+<br/>
+
+<p class="title">Calendar</p>
+<hr/>
+<div class="table-wrapper">
 <table id="calendar" class="table" cellpadding="5px">
   <tbody>
     <tr>
+      <th width="70px">Week</th>
       <th>Topic</th>
       <th>Reading</th>
-      <th>Homework</th>
-      <th>Journal Prompt</th>
+      <th width="110px">Homework</th>
+      <th>Journal</th>
     </tr>
     {% for week in WEEKS %}
       <tr>
+        <td>{{ week.date.strftime('%b %d') }}</td>
         <td>{{ week.title }}</td>
         {% for type in RESOURCE_TYPES %}
           <td>
             {% if week.resources[type] %}
-              <a href="{{ url_for(week.resources[type]) }}">test</a>
-            {% else %}
-              Nada
+              <a href="{{ url_for(week.resources[type]) }}">
+                {{ RESOURCE_TYPES[type](week) }}
+              </a>
             {% endif %}
           </td>
         {% endfor %}
@@ -39,4 +48,6 @@ TESTING
     {% endfor %}
   </tbody>
 </table>
+</div>
+
 {% endblock %}

@@ -1,7 +1,8 @@
+from datetime import timedelta
 from os import listdir, makedirs
 from os.path import join
 
-from semester import CURRICULUM
+from semester import CURRICULUM, META
 from utils import *
 
 CURRICULUM_DIR = 'curriculum'
@@ -10,6 +11,7 @@ class Week():
 
     def __init__(self, number, topics):
         self.number = number
+        self.date = (META['SUNDAY_OF_FIRST_WEEK'] + timedelta(7) * self.number)
         self.path = f'weeks/week-{pad(self.number, 2)}'
         self.topics = [Topic(topic) for topic in topics]
         self.title = render_list([topic.title for topic in self.topics])
@@ -24,7 +26,7 @@ class Week():
             makedirs(out_dir, exist_ok=True)
             if out_file not in listdir(out_dir):
                 template = read(f'templates/{type}.html')
-                in_content = join_markdown([read(in_file) for in_file in in_files])
+                in_content = '\n\n'.join(read(in_file) for in_file in in_files)
                 out_content = template.replace(
                     '{{ CONTENT }}',
                     in_content
@@ -61,6 +63,10 @@ class Topic():
         dir_files = listdir(self.path)
         return {type for type in RESOURCE_TYPES if f'{type}.md' in dir_files}
 
-RESOURCE_TYPES = ['readings', 'homework', 'journal']
+RESOURCE_TYPES = {
+    'readings': lambda week: None,
+    'homework': lambda week: f'Due {(week.date + META["TIME_PER_HOMEWORK"]).strftime("%b %d")}',
+    'journal': lambda week: None,
+}
 
 WEEKS = [Week(number, topics) for number, topics in enumerate(CURRICULUM)]

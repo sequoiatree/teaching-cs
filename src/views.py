@@ -2,7 +2,7 @@ from flask import render_template
 
 from app import app
 from models import RESOURCE_TYPES, WEEKS
-from semester import SEMESTER
+from semester import META
 
 def rename(name):
     def rename_decorator(function):
@@ -18,7 +18,7 @@ def make_template(week, type):
 
 @app.route('/')
 def render_index():
-    return render_template('index.html', WEEKS=WEEKS, RESOURCE_TYPES=RESOURCE_TYPES, **SEMESTER)
+    return render_template('index.html', WEEKS=WEEKS, RESOURCE_TYPES=RESOURCE_TYPES, **META)
 
 @app.route('/policies')
 def render_policies():

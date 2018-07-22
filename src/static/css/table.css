@@ -1,0 +1,21 @@
+.table-wrapper {
+  overflow: scroll;
+}
+
+table {
+  margin: auto;
+}
+
+th, td {
+  font-size: 15pt;
+  color: black;
+  line-height: 1.8;
+}
+
+th {
+  background-color: #e6e6e6;
+}
+
+td {
+  background-color: #ecf0f1;
+}

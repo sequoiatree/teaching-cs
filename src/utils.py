@@ -1,5 +1,6 @@
 from os import mkdir
-from shutil import rmtree
+
+LOWERCASE_TITLE_WORDS = {'A', 'An', 'The', 'In', 'Of', 'To', 'With', 'And', 'For'}
 
 def hyphen_case(text):
     ILLEGAL_CHARS = {' ': '-', '/': '-', '&': 'and', '_': ''}
@@ -33,9 +34,10 @@ def render_list(elements, singular=None, plural=None):
         text = '{}, and {}'.format(', '.join(elements[:-1]), elements[-1])
     if singular or plural:
         assert singular and plural, 'Please specify and singular and plural base.'
-        return '{}: {}'.format(singular if len(elements) == 1 else plural, text)
-    else:
-        return text
-
-def join_markdown(content):
-    return ''.join(content)
+        text = '{}: {}'.format(singular if len(elements) == 1 else plural, text)
+    words = text.split(' ')
+    for i in range(1, len(words)):
+        word = words[i]
+        if word in LOWERCASE_TITLE_WORDS:
+            words[i] = word.lower()
+    return ' '.join(words)

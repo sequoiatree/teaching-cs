@@ -15,6 +15,10 @@
   color: #ecf0f1;
 }
 
+.navbar a:not(:first-child) {
+  float: right;
+}
+
 .navbar .icon {
   display: none;
   font-size: 11pt;
@@ -24,7 +28,7 @@
   color: #ffffff;
 }
 
-@media screen and (max-width: 314px) {
+@media screen and (max-width: 380px) {
   .navbar a:not(:first-child) {
     display: none;
   }
