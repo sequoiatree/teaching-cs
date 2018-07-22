@@ -1,0 +1,3 @@
+# Exploring the role of memorization in learning
+
+Read [this Quora post](https://www.quora.com/Do-grad-school-students-remember-everything-they-were-taught-in-college-all-the-time/answer/Mark-Eichenlaub?srid=xAq&share=1) and make a two page outline of the topics discussed. It is long, so please put aside some time to read this. Some students in the past have read it in chunks. After you finish your outline, post a followup here, or a remark / response to someone else's followup, in the thread below! There's a lot of interesting material and insights in this reading for you to talk about.
