@@ -5,21 +5,26 @@ from os.path import join
 from semester import CURRICULUM, META
 from utils import *
 
-CURRICULUM_DIR = 'curriculum'
+TOPICAL_DIR = 'curriculum/topical'
+WEEKLY_DIR = 'curriculum/weekly'
 
 class Week():
 
     def __init__(self, number, topics):
         self.number = number
+        self.directory = f'week-{pad(self.number + 1, 2)}'
+        self.path = f'composite-resources/{self.directory}'
         self.date = (META['SUNDAY_OF_FIRST_WEEK'] + timedelta(7) * self.number)
-        self.path = f'weeks/week-{pad(self.number, 2)}'
         self.topics = [Topic(topic) for topic in topics]
         self.title = render_list([topic.title for topic in self.topics])
         self.resources = {type: self.load_resource(type) for type in RESOURCE_TYPES}
 
     def load_resource(self, type):
-        in_files = [join(topic.path, f'{type}.md')
+        weekly_file, filename = join(WEEKLY_DIR, self.directory), f'{type}.md'
+        in_files = [join(topic.path, filename)
                     for topic in self.topics if type in topic.resources]
+        if self.directory in listdir(WEEKLY_DIR) and filename in listdir(weekly_file):
+            in_files.append(join(weekly_file, filename))
         if in_files:
             out_dir = self.path
             out_file = self.template(type)
@@ -29,7 +34,7 @@ class Week():
                 in_content = '\n\n'.join(read(in_file) for in_file in in_files)
                 out_content = template.replace(
                     '{{ CONTENT }}',
-                    in_content
+                    in_content # TODO: parse markdown
                 )
                 write(join(out_dir, out_file), out_content)
             return self.renderer(type)
@@ -48,7 +53,7 @@ class Week():
 class Topic():
 
     def __init__(self, topic):
-        self.path = join(CURRICULUM_DIR, topic)
+        self.path = join(TOPICAL_DIR, topic)
         self.title = read(join(self.path, 'meta.txt'))
         self.chapterr = self.load_from_file('chapter.txt')
         self.resources = self.load_resources()

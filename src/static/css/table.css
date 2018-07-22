@@ -19,3 +19,11 @@ th {
 td {
   background-color: #ecf0f1;
 }
+
+.date-col {
+  width: 70px;
+}
+
+.due-col {
+  width: 110px;
+}

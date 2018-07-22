@@ -1,5 +1,7 @@
 from datetime import datetime, timedelta
 
+from flask import Markup
+
 from utils import *
 
 META = {
@@ -9,13 +11,16 @@ META = {
     'TERM': 'Fall',
     'SUNDAY_OF_FIRST_WEEK': datetime(2018, 8, 19),
     'SUNDAY_OF_BREAK_WEEK': datetime(2018, 11, 18), # None if there's no break.
-    'INSTRUCTOR': render_list([
+    'INSTRUCTOR': Markup(render_list([
         'Christopher Hunn',
-        'Sequoia Eyzaguirre',
-    ], 'Instructor', 'Instructors'),
+        make_link('Sequoia Eyzaguirre', 'https://sequoia-tree.github.io'),
+    ], 'Instructor', 'Instructors')),
     'SCHEDULER': 'http://cs370scheduler.org',
     'PIAZZA': 'https://piazza.com/class/jjvyvwze5n58k',
+    'TIME_UNTIL_HOMEWORK_RELEASED': timedelta(0), # TODO
+    'TIME_UNTIL_JOURNAL_RELEASED': timedelta(0), # TODO
     'TIME_PER_HOMEWORK': timedelta(6, 23, 59),
+    'TIME_PER_JOURNAL': timedelta(0), # TODO
 }
 
 CURRICULUM = [

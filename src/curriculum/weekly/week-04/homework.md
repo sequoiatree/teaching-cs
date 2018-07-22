@@ -1,0 +1,3 @@
+# [Optional] Schedule a one-on-one meeting
+
+After your first few weeks of tutoring, you may have some questions about CS 370 logistics, what further steps you can take to become a good teacher, or maybe you just want to chat. Accordingly, we'll be holding one-on-one appointments next week! If you're interested, then [sign up here](https://docs.google.com/forms/d/e/1FAIpQLSdQbA76v52lwvXvyLPm-FcCP8QDD12xepJiftr7HxPb8YFAGg/viewform?usp=sf_link). Please do not schedule a one-on-one just to ask about applying to CSM, course staff, etc. I'll be holding a workshop later in the semester to go over all those details.

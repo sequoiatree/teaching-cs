@@ -1,0 +1,3 @@
+# Gender bias in tech
+
+Read the article [A Lesson in Encouraging Diversity in the Classroom](https://www.usenix.org/blog/my-daughters-high-school-programming-teacher). Then respond to it in 3 paragraphs or more. In the role of a TA, what ideas from this article could you apply to your teaching in to make a more inclusive learning environment? Come up with a list of 3 to 5 ways to promote a diverse mindset with your students and within your classroom.
