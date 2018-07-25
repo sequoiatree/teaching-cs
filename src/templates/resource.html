@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{{ include.static_css(('resource',)) }}
+{% endblock %}
+
+{% block title %}Week {{ week.number }} {{ type.capitalize() }}{% endblock %}
+
+{% block content %}
+<h1 id="resource-id">Week {{ week.number }} {{ type.capitalize() }}</h1>
+<hr/>
+{% block resource_content %}
+{% endblock resource_content %}
+{% endblock %}

@@ -1,6 +1,6 @@
 # Overloaded CS terms
 
-Teaching can be difficult when there are words that you use without explaining their definition. Worse, there are lots of words that have a different meaning outside of CS, which confuse the student you're working with because they might not know the word also has a CS-related definition. Your task is to find one such word that might be confusing to students in a CS class you've taken. Explain the outside context and also the CS context in a followup to the "Overloaded Terms" post on Piazza. Don't post duplicates!
+Teaching can be difficult when there are words that you use without explaining their definition. Worse, there are lots of words that have a different meaning outside of CS, which confuse the student you're working with because they might not know the word also has a CS-related definition. Your task is to find one such word that might be confusing to students in a CS class you've taken. Explain the outside context and also the CS context in the #overloaded-terms channel on Slack. Don't post duplicates!
 
 Here are some examples:
 

@@ -6,11 +6,11 @@ Then read [this article](http://gsi.berkeley.edu/gsi-guide-contents/discussion-i
 
 # Teaching to a non-uniform distribution
 
-Imagine you're a TA. Your discussion section has students at varying levels of understanding in the course material. Some people are struggling (0-25%), some people are really far ahead (75-100%), and most of the class is in the middle (25-75%). Who do you teach to?
+Imagine you're a TA. Your discussion section has students at varying levels of understanding in the course material. Some people are struggling (0-25%), some people are really far ahead (75-100%), and most of the class is in the middle (25-50% and 50-75%). Who do you teach to?
 
-Cast a vote in the "Group Teaching Poll" on Piazza, and then make two posts in the thread below:
+Cast a vote in the poll pinned at the top of the #group-teaching channel on Slack. Then make two posts of your own in the same channel:
 
-* Your first post in the thread below should explain in 1-3 paragraphs why you voted as you did. What's your reasoning? Can you think of any creative ways to address the problem? How do we get around it? Please try to make this post before the middle of the week, so others have time to respond to it.
-* Also post a followup to another student's response, either agreeing / disputing / commenting / etc their answer.
+* Your first post should explain in 1-3 paragraphs why you voted as you did. What's your reasoning? Can you think of any creative ways to address the problem? How do we get around it? Please try to make this post before the middle of the week, so others have time to respond to it.
+* Also post a followup to another student's response, agreeing, disputing, or commenting on their answer.
 
 Try to post as early as you can, so that other students have a chance to engage with what you have to say about the topic. And of course, feel free to post multiple responses / followups too! The goal is to have a lively, productive discussion on Piazza.

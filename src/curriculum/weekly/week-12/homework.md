@@ -1,12 +1,12 @@
 # TA shadowing
 
-This week you'll be shadowing a TA's discussion section in CS 61A, CS 61B, or CS 61C! This is time sensitive, so please read through the rules now.
+This week you'll be shadowing a TA's discussion section! This is time sensitive, so please read through the rules now.
 
 ## When you're signin up to shadow
 
-* Sign up to shadow a TA on this form. There can be a maximum of 3 people shadowing each discussion section, so sign up early for the discussion section you want.
+* Sign up to shadow a TA on [this form]({{ TA_SHADOWING }}). Sign up early for the discussion section you want.
 * Mark the place and time on your calendar! Do not forget about the appointment you're shadowing!
-* CS 61A discussion sections are 90 minutes long. Plan accordingly.
+* Some discussion sections are 60 minutes, long while some are 90 minutes long. Plan accordingly. If you are shadowing a 90 minute discussion section, you have to stay the entire time.
 * Please review this week's material in advance for the class that you are shadowing, so you can follow along with the discussion section. It should be readily available on the class' website.
 
 ## When you're shadowing

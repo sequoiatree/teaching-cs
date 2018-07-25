@@ -1,0 +1,36 @@
+.content h1, .content h1 a, .content h1 a:hover, .content h1 code {
+  text-decoration: none;
+  font-size: 24pt;
+  font-weight: bold;
+}
+
+.content h2, .content h2 a, .content h2 a:hover, .content h2 code {
+  text-decoration: none;
+  font-size: 18pt;
+  font-weight: bold;
+}
+
+.content p, .content a, .content a:hover, .content li, .content strong, .content em, .content code {
+  text-align: left;
+  font-size: 12.5pt;
+  line-height: 1.6;
+}
+
+.content p, .content a, .content a:hover, .content li, .content strong, .content em {
+  font-family: 'Work Sans', sans-serif;
+}
+
+pre {
+  overflow-x: scroll;
+  border-radius: 10px;
+  background-color: #ecf0f1;
+  padding: 5px 10px;
+}
+
+code {
+  font-family: 'PT Mono', monospace;
+  background-color: #ecf0f1;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}

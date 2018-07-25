@@ -16,11 +16,15 @@ META = {
         make_link('Sequoia Eyzaguirre', 'https://sequoia-tree.github.io'),
     ], 'Instructor', 'Instructors')),
     'SCHEDULER': 'http://cs370scheduler.org',
-    'PIAZZA': 'https://piazza.com/class/jjvyvwze5n58k',
+    'SLACK': 'https://cs370fall2018.slack.com/',
     'TIME_UNTIL_HOMEWORK_RELEASED': timedelta(0), # TODO
     'TIME_UNTIL_JOURNAL_RELEASED': timedelta(0), # TODO
     'TIME_PER_HOMEWORK': timedelta(6, 23, 59),
     'TIME_PER_JOURNAL': timedelta(0), # TODO
+    'FINAL_SURVEY': 'https://goo.gl/forms/TOyNWeMCWsrtghdw2',
+    'ONE_ON_ONE_REQUESTS': 'https://goo.gl/forms/0dNV32Dnd1zHHNl62',
+    'PEER_SHADOWING': 'https://goo.gl/mUeqPV',
+    'TA_SHADOWING': 'https://goo.gl/NHmzMs',
 }
 
 CURRICULUM = [
@@ -45,3 +49,4 @@ if META['SUNDAY_OF_BREAK_WEEK']:
         (META['SUNDAY_OF_BREAK_WEEK'] - META['SUNDAY_OF_FIRST_WEEK']).days // 7,
         ['break']
     )
+    META['BREAK'] = 'Thanksgiving' if META['TERM'] == 'Fall' else 'Spring'

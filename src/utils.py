@@ -1,5 +1,12 @@
 from os import mkdir
 
+from markdown import markdown
+
+MARKDOWN_EXTENSIONS = (
+    'extra',
+    'toc',
+)
+
 LOWERCASE_TITLE_WORDS = {'A', 'An', 'The', 'In', 'Of', 'To', 'With', 'And', 'For'}
 
 def hyphen_case(text):
@@ -20,6 +27,9 @@ def read(file):
 def write(file, *args, **kwargs):
     with open(file, 'w') as file:
         file.write(*args, **kwargs)
+
+def md_to_html(text):
+    return markdown(text, extensions=MARKDOWN_EXTENSIONS, output_format='html5')
 
 def pad(num, length):
     text_num = str(num)

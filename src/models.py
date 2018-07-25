@@ -5,17 +5,25 @@ from os.path import join
 from semester import CURRICULUM, META
 from utils import *
 
+MD_FILE_DIR = 'static/md'
 TOPICAL_DIR = 'curriculum/topical'
 WEEKLY_DIR = 'curriculum/weekly'
 PREV_DIR, NEXT_DIR = 'prev', 'next'
 
+RESOURCE_TYPES = {
+    'readings': lambda week: None,
+    'homework': lambda week: f'Due {(week.date + META["TIME_PER_HOMEWORK"]).strftime("%b %d")}',
+    'journal': lambda week: None,
+}
+
 class Week():
 
-    def __init__(self, number, topics):
-        self.number = number
-        self.directory = f'week-{pad(self.number + 1, 2)}'
+    def __init__(self, index, topics):
+        self.index = index
+        self.number = self.index + 1
+        self.directory = f'week-{pad(self.number, 2)}'
         self.path = f'composite-resources/{self.directory}'
-        self.date = (META['SUNDAY_OF_FIRST_WEEK'] + timedelta(7) * self.number)
+        self.date = (META['SUNDAY_OF_FIRST_WEEK'] + timedelta(7) * self.index)
         self.topics = [Topic(topic) for topic in topics]
         self.title = render_list([topic.title for topic in self.topics])
         self.files = {type: [] for type in RESOURCE_TYPES}
@@ -29,9 +37,9 @@ class Week():
             if type in topic.resources:
                 load_file(self, topic.path)
             if PREV_DIR in topic_files and filename in listdir(prev_files):
-                load_file(WEEKS[self.number - 1], prev_files)
+                load_file(WEEKS[self.index - 1], prev_files)
             if NEXT_DIR in topic_files and filename in listdir(next_files):
-                load_file(WEEKS[self.number + 1], next_files)
+                load_file(WEEKS[self.index + 1], next_files)
 
     def load_resources(self):
         self.resources = {type: self.load_resource(type) for type in RESOURCE_TYPES}
@@ -45,10 +53,7 @@ class Week():
             if out_file not in listdir(out_dir):
                 template = read(f'templates/{type}.html')
                 in_content = '\n\n'.join(read(in_file) for in_file in in_files)
-                out_content = template.replace(
-                    '{{ CONTENT }}',
-                    in_content # TODO: parse markdown
-                )
+                out_content = template.replace('{{ CONTENT }}', md_to_html(in_content))
                 write(join(out_dir, out_file), out_content)
             return self.renderer(type)
         else:
@@ -81,13 +86,12 @@ class Topic():
         dir_files = listdir(self.path)
         return {type for type in RESOURCE_TYPES if f'{type}.md' in dir_files}
 
-RESOURCE_TYPES = {
-    'readings': lambda week: None,
-    'homework': lambda week: f'Due {(week.date + META["TIME_PER_HOMEWORK"]).strftime("%b %d")}',
-    'journal': lambda week: None,
-}
+FILES = {'policies'}
 
-WEEKS = [Week(number, topics) for number, topics in enumerate(CURRICULUM)]
+WEEKS = [Week(index, topics) for index, topics in enumerate(CURRICULUM)]
+
+for file in FILES:
+    write(f'templates/{file}.html', md_to_html(read(join(MD_FILE_DIR, f'{file}.md'))))
 
 for week in WEEKS:
     for type in RESOURCE_TYPES:
