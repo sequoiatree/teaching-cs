@@ -31,6 +31,11 @@ def write(file, *args, **kwargs):
 def md_to_html(text):
     return markdown(text, extensions=MARKDOWN_EXTENSIONS, output_format='html5')
 
+def make_html(template, in_content, out_file):
+    template_content = read(f'templates/{template}.html')
+    out_content = template_content.replace('{{ CONTENT }}', md_to_html(in_content))
+    write(out_file, out_content)
+
 def pad(num, length):
     text_num = str(num)
     return ''.join(('0' * (length - len(text_num)), text_num))

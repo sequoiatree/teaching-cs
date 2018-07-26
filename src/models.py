@@ -51,10 +51,8 @@ class Week():
             out_file = self.template(type)
             makedirs(out_dir, exist_ok=True)
             if out_file not in listdir(out_dir):
-                template = read(f'templates/{type}.html')
                 in_content = '\n\n'.join(read(in_file) for in_file in in_files)
-                out_content = template.replace('{{ CONTENT }}', md_to_html(in_content))
-                write(join(out_dir, out_file), out_content)
+                make_html(f'{type}', in_content, join(out_dir, out_file))
             return self.renderer(type)
         else:
             return None
@@ -91,7 +89,7 @@ FILES = {'policies'}
 WEEKS = [Week(index, topics) for index, topics in enumerate(CURRICULUM)]
 
 for file in FILES:
-    write(f'templates/{file}.html', md_to_html(read(join(MD_FILE_DIR, f'{file}.md'))))
+    make_html('file', read(join(MD_FILE_DIR, f'{file}.md')), f'templates/{file}.html')
 
 for week in WEEKS:
     for type in RESOURCE_TYPES:

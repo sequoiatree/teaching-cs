@@ -32,6 +32,6 @@ for week in WEEKS:
 for file in FILES:
     make_template(
         file, f'render_{file}',
-        lambda file: render_template(f'{file}.html', **META),
+        lambda file: render_template(f'{file}.html', file=file, **META),
         file
     )
