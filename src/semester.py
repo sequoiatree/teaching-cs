@@ -17,6 +17,7 @@ META = {
     ], 'Instructor', 'Instructors')),
     'SCHEDULER': 'http://cs370scheduler.org',
     'SLACK': 'https://cs370fall2018.slack.com/',
+    'SLACK_INVITE': 'https://goo.gl/r8aG6g',
     'TIME_UNTIL_HOMEWORK_RELEASED': timedelta(0), # TODO
     'TIME_UNTIL_JOURNAL_RELEASED': timedelta(0), # TODO
     'TIME_PER_HOMEWORK': timedelta(6, 23, 59),

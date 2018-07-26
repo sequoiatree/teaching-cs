@@ -31,15 +31,18 @@ class Week():
     def load_files(self, type):
         filename = f'{type}.md'
         load_file = lambda week, path: week.files[type].append(join(path, filename))
+        weekly_path = join(WEEKLY_DIR, self.directory)
+        if self.directory in listdir(WEEKLY_DIR) and filename in listdir(weekly_path):
+            load_file(self, weekly_path)
         for topic in self.topics:
+            prev_path, next_path = join(topic.path, PREV_DIR), join(topic.path, NEXT_DIR)
             topic_files = listdir(topic.path)
-            prev_files, next_files = join(topic.path, PREV_DIR), join(topic.path, NEXT_DIR)
             if type in topic.resources:
                 load_file(self, topic.path)
-            if PREV_DIR in topic_files and filename in listdir(prev_files):
-                load_file(WEEKS[self.index - 1], prev_files)
-            if NEXT_DIR in topic_files and filename in listdir(next_files):
-                load_file(WEEKS[self.index + 1], next_files)
+            if PREV_DIR in topic_files and filename in listdir(prev_path):
+                load_file(WEEKS[self.index - 1], prev_path)
+            if NEXT_DIR in topic_files and filename in listdir(next_path):
+                load_file(WEEKS[self.index + 1], next_path)
 
     def load_resources(self):
         self.resources = {type: self.load_resource(type) for type in RESOURCE_TYPES}
