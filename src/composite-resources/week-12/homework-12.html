@@ -30,5 +30,15 @@
 <h1 id="gender-bias-in-tech">Gender bias in tech</h1>
 <p>Read the article <a href="https://www.usenix.org/blog/my-daughters-high-school-programming-teacher">A Lesson in Encouraging Diversity in the Classroom</a>. Then respond to it in 3 paragraphs or more. In the role of a TA, what ideas from this article could you apply to your teaching in to make a more inclusive learning environment? Come up with a list of 3 to 5 ways to promote a diverse mindset with your students and within your classroom. Provide your reasoning.</p>
 
+{% if week.resources['readings'] %}
+  <h1 id="respond-to-the-readings">Respond to the readings</h1>
+  <p>
+    Make a post in the #readings channel on Slack, discussing one of <a href="{{ url_for(week.resources['readings']) }}">this week's readings</a> or responding to a post by one of your peers. You should lend something new and useful to the conversion. (For example you could explain how to apply something that you learned, or offer an argument for / against one of your peers' ideas. Any input is welcome, as long as it is original and respectful.)
+  </p>
+  <p>
+    Also feel free to find a different article on your own, and respond to that instead of one of the readings. Just be sure to provide a link to it, so others can read it too.
+  </p>
+{% endif %}
+
 {% endblock %}
 

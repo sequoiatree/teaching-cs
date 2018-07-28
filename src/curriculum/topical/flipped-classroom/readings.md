@@ -1,0 +1,1 @@
+* [Vanderbilt's exploration of the flipped classroom format.](https://cft.vanderbilt.edu/guides-sub-pages/flipping-the-classroom/)

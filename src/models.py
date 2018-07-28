@@ -13,7 +13,7 @@ PREV_DIR, NEXT_DIR = 'prev', 'next'
 RESOURCE_TYPES = {
     'readings': lambda week: None,
     'homework': lambda week: f'Due {(week.date + META["TIME_PER_HOMEWORK"]).strftime("%b %d")}',
-    'journal': lambda week: None,
+    'tutoring': lambda week: None,
 }
 
 class Week():

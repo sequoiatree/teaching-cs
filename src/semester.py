@@ -31,18 +31,18 @@ META = {
 CURRICULUM = [
     ['introduction', 'socratic-method'],
     ['learning-models', 'blooms-taxonomy'],
-    ['misconception-theory', '2-sigma'],
+    ['misconception-theory', 'expert-blindness', '2-sigma'],
     ['memory', 'growth-mindset'],
     ['teaching-recursion'],
     ['setting-goals'],
-    ['guest-speaker'],
+    ['guest-speaker', 'flipped-classroom'],
     ['midterm', 'applying-to-staff'],
     ['group-teaching-exercise'],
     ['group-teaching-techniques', 'gps-syndrome'],
     ['imposter-syndrome', 'stereotype-threat'],
-    ['diversity'],
+    ['diversity', 'unconscious-bias'],
     ['designing-resources'],
-    ['conclusion'],
+    ['final', 'conclusion'],
 ]
 
 if META['SUNDAY_OF_BREAK_WEEK']:
