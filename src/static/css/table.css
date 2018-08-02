@@ -21,9 +21,9 @@ td {
 }
 
 .date-col {
-  width: 70px;
+  min-width: 70px;
 }
 
 .due-col {
-  width: 110px;
+  min-width: 110px;
 }
