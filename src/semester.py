@@ -18,14 +18,15 @@ META = {
     'SCHEDULER': 'http://cs370scheduler.org',
     'SLACK': 'https://cs370fall2018.slack.com/',
     'SLACK_INVITE': 'https://goo.gl/r8aG6g',
-    'TIME_UNTIL_HOMEWORK_RELEASED': timedelta(0), # TODO
-    'TIME_UNTIL_JOURNAL_RELEASED': timedelta(0), # TODO
-    'TIME_PER_HOMEWORK': timedelta(6, 23, 59),
-    'TIME_PER_JOURNAL': timedelta(0), # TODO
-    'FINAL_SURVEY': 'https://goo.gl/forms/TOyNWeMCWsrtghdw2',
+    'TUTORING_HOURS_PER_WEEK': 3,
+    'TIME_UNTIL_HOMEWORK_RELEASED': timedelta(0),
+    'TIME_UNTIL_JOURNAL_RELEASED': timedelta(5),
+    'TIME_UNTIL_HOMEWORK_DUE': timedelta(6, 23, 59),
+    'TIME_UNTIL_JOURNAL_DUE': timedelta(11, 23, 59),
     'ONE_ON_ONE_REQUESTS': 'https://goo.gl/forms/0dNV32Dnd1zHHNl62',
     'PEER_SHADOWING': 'https://goo.gl/mUeqPV',
     'TA_SHADOWING': 'https://goo.gl/NHmzMs',
+    'FINAL_SURVEY': 'https://goo.gl/forms/TOyNWeMCWsrtghdw2',
 }
 
 CURRICULUM = [
@@ -44,6 +45,8 @@ CURRICULUM = [
     ['designing-resources'],
     ['final', 'conclusion'],
 ]
+
+META['TUTORING_WEEKS'] = len(CURRICULUM)
 
 if META['SUNDAY_OF_BREAK_WEEK']:
     CURRICULUM.insert(

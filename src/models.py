@@ -11,9 +11,9 @@ WEEKLY_DIR = 'curriculum/weekly'
 PREV_DIR, NEXT_DIR = 'prev', 'next'
 
 RESOURCE_TYPES = {
-    'readings': lambda week: None,
-    'homework': lambda week: f'Due {(week.date + META["TIME_PER_HOMEWORK"]).strftime("%b %d")}',
-    'tutoring': lambda week: None,
+    'readings': lambda wk: f'Wk. {pad(wk.number, 2)}',
+    'homework': lambda wk: f'Due {(wk.date + META["TIME_UNTIL_HOMEWORK_DUE"]).strftime("%b %d")}',
+    'tutoring': lambda wk: f'Due {(wk.date + META["TIME_UNTIL_JOURNAL_DUE"]).strftime("%b %d")}',
 }
 
 class Week():
