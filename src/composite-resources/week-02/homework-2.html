@@ -7,20 +7,35 @@
 <p>Document the interaction in the #practicing-socratic channel on Slack. Conclude the post with a short paragraph outlining your thoughts about the interaction. Please read some other folks' posts as well; the goal is to gain experience, but also to see how others apply the Socratic method. You might pick up a useful tip or two.</p>
 <p>See <a href="https://docs.google.com/document/d/1JnQT68u2XOBtddCmaxvVsmns9pzbJBDibE_cOxv_-18/edit?usp=sharing">here</a> for an example, from way back when I was a lab assistant.</p>
 <h1 id="classification-according-to-blooms-taxonomy">Classification according to Bloom's taxonomy</h1>
-<p>Bloom's taxonomy is one of the most widely-known models of learning. We'll focus on a revised version from 2001 (the year, not the space odyssey). Read these two articles for a in-depth explanation of how it works:</p>
+<p>Bloom's taxonomy is one of the most widely-known models of learning. It divides cognitive processes into six distinct levels:</p>
 <ul>
-<li><a href="https://cft.vanderbilt.edu/guides-sub-pages/blooms-taxonomy/">Bloom’s Taxonomy from Vanderbilt</a></li>
-<li><a href="http://www.celt.iastate.edu/teaching/effective-teaching-practices/revised-blooms-taxonomy">Revised Bloom’s Taxonomy from Iowa State</a></li>
+<li><strong>Remember:</strong> To rotely memorize information. <em>Example: Listing Python's primitive types.</em></li>
+<li><strong>Understand:</strong> To grasp a concept well enough that you can say it in your own words. <em>Example: Explaining how recursion works on a high level.</em></li>
+<li><strong>Apply:</strong> To solve a new problem using information and strategies you've been taught. <em>Example: Writing a recursive solution to <code>fibonacci(n)</code>, when you've already learned what recursion is and seen an example like <code>factorial(n)</code>.</em></li>
+<li><strong>Analyze:</strong> To break down information into constituent parts, identify structure, or contrast two bodies of information. <em>Example: Determine the base case in a mutually recursive function call, without carrying out the whole evaluation process.</em></li>
+<li><strong>Evaluate:</strong> To analyze a body of information, and then make a judgement call about it. <em>Example: To claim whether a solution to a problem has a "good" asymptotic running time, and justify your answer.</em></li>
+<li><strong>Create:</strong> To evaluate a body of information, and then improve upon it. <em>Example: To improve the asymptotic running time of a function.</em></li>
 </ul>
-<p>Now choose a lower-division CS course. Recall the exams you took in the class that you chose. Write down all the different types of questions that appeared on the exams, and classify them according to the revised taxonomy. Justify why you think your classification is correct. Remember, each question type very likely covers several levels of the taxonomy. What levels, and under what circumstances?</p>
-<h1 id="a-detailed-application-of-blooms-taxonomy">A detailed application of Bloom's taxonomy</h1>
-<p>In this assignment, we'll focus on the knowledge dimension of the revised Bloom's taxonomy, which turns the pyramid model into a 2-dimensional Q*bert-esque shape. You should refer to the second reading above in order to complete this assignment.</p>
-<p>First pick a difficult problem from the class that you teach. You may refer to past discussions, past midterms, guerilla section worksheets, etc. In your homework submission please include a link to the question that you chose, and additionally copy / paste it for ease of reference. For that question, describe the necessary steps to solve it. Be as explicit as possible. Each step should be designed to gently guide a student toward the solution, rather than simply explaining the solution yourself. Look out for common questions or misconceptions that students might have regarding the question. Then, for each step of the solution, identify where it falls on the new 2-D revision of Bloom's taxonomy. Justify why you think your classification is correct. Here are some good examples from past iterations of this assignment. You don't have to make yours exactly like these, but hopefully they give you an idea of what we expect:</p>
+<p>Note that a problem may appear at different levels of the taxonomy for different students. Consider the two scenarios below.</p>
+<ol>
+<li>A student has never learned asymptotic analysis. You ask them how many times the recursive <code>fibonacci</code> function will get invoked when you make the function call <code>fibonacci(n)</code>. The student will have to <strong>analyze</strong> the <code>fibonacci</code> function to determine the underlying structure of function calls.</li>
+<li>A student has had significant experience with asymptotic analysis, and has seen many examples of recursive functions that grow exponentially. You ask them how many times the recursive <code>fibonacci</code> function will get invoked when you make the function call <code>fibonacci(n)</code>. The student will have to <strong>apply</strong> a procedure they're already familiar with.</li>
+</ol>
+<p>For each level of Bloom's taxonomy, provide an example from a computer science class you teach. Also specify the student's prior knowledge base and why it's important. Justify all your answers in a few setences.</p>
+<h1 id="analyzing-a-problem-with-blooms-taxonomy">Analyzing a problem with Bloom's taxonomy</h1>
+<p>In ~~the film <em>2001: A Space Odyssey</em>~~ the year 2001, Bloom's taxonomy was revised to include another axis measuring the level of abstraction of the task at hand. These resources will explain how it works:</p>
+<ul>
+<li><a href="http://www.celt.iastate.edu/wp-content/uploads/2015/09/RevisedBloomsHandout-1.pdf">Iowa State's model of Bloom's revised taxonomy</a></li>
+<li><a href="http://www.celt.iastate.edu/teaching/effective-teaching-practices/revised-blooms-taxonomy/blooms-revised-taxonomy-model">Iowa State's associated explanation of Bloom's revised taxonomy</a></li>
+</ul>
+<p>First pick a difficult problem from the class that you teach. You may refer to past discussions, past midterms, guerilla section worksheets, etc. In your homework submission please include a link to the question that you chose, and additionally copy / paste it for ease of reference.</p>
+<p>For the question you selected, describe the necessary steps to solve it. Be as explicit as possible. Each step should be designed to gently guide a student toward the solution, rather than simply explaining the solution yourself. Look out for common questions or misconceptions that students might have regarding the question. Then, for each step of the solution, identify where it falls on the Bloom's revised taxonomy. Justify why you think your classification is correct. Here are some good examples from past iterations of this assignment:</p>
 <ul>
 <li><a href="https://docs.google.com/document/d/1JmBzA8qTsLp0iX0-6X6L_CJIuQmAqfX3t6SOWq_SbCg/edit?usp=sharing">Example 1</a></li>
 <li><a href="https://docs.google.com/document/d/1R_uXY24GkAR4EswJaJFk7ffmKG3SepfXGs6eWWAitZs/edit?usp=sharing">Example 2</a></li>
 <li><a href="https://docs.google.com/document/d/1dIQ0feab7_5Lc8-ALGK0yuSJjwtNYA_uwOHWAw1usAI/edit?usp=sharing">Example 3</a></li>
 </ul>
+<p>You shouldn't make yours exactly like these, but hopefully they give you an idea of what we expect.</p>
 
 {% endblock %}
 
