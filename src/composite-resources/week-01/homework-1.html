@@ -3,25 +3,7 @@
 {% block resource_content %}
 
 <h1 id="join-slack">Join Slack</h1>
-<p><a href="{{ SLACK_INVITE }}">Join the CS 370 Slack by visiting this link!</a> Then read through the sections below.</p>
-<h2 id="policies">Policies</h2>
-<p>First and foremost, it is your responsibility to stay up-to-date with Slack. That means you should check it often, daily at the least. This is because I will release all time-sensitive announcements via Slack throughout the semester. Some homework assignments will also require you to post on Slack.</p>
-<p>To make it easy for you to stay up-to-date with Slack, I strongly recommend <a href="https://slack.com/downloads/">installing the Slack app</a> on your computer and perhaps even your phone. You will eventually want to do this anyways, since every course staff relies heavily on Slack.</p>
-<p>Also, since there are very many people in this class, you will likely want to adjust your notification settings so that you don't get alerted every time someone makes a post on Slack. You can do this by clicking on the workspace name ("{{ CLASS_CODE }}: {{ TERM }} {{ YEAR }}") and then selecting "Preferences". Under the "Notifications" tab, select "Direct messages, mentions, &amp; keywords." Importantly, <strong>do not</strong> select "Nothing", which would completely turn off notifications. That would be against class policy, since you must be aware of time-sensitive announcements that I make.</p>
-<h2 id="channels">Channels</h2>
-<p>There are a few channels on our Slack. Please respect the purpose of each one.</p>
-<ul>
-<li><strong>#general:</strong> I will post logistical announcements in this channel. You should not make any posts here, but please reply to the announcements I make if you have any questions, comments, or concerns about them.</li>
-<li><strong>#random:</strong> Write anything you want in this channel. Whether you want to share a funny video, schedule an impromptu dinner, or just chat with your peers, feel free and welcome! The only requirement is that you are respectful of your peers.</li>
-<li><strong>#homework:</strong> Use this channel for questions, comments, or concerns about the homework. You can also bounce ideas off one another in this channel if you want to share or collaboratively develop ideas relevant to the homework. (Oh, and your activity this channel counts for participation credit!)</li>
-<li><strong>#tutoring:</strong> Use this channel for questions, comments, or concerns about tutoring and tutoring journals. Want to share advice, or ask for input? Want to know how others approached teaching a certain topic? Or how folks are structuring their midterm-prep sessions? That's what this channel is here for.</li>
-<li><strong>#readings:</strong> Use this channel for questions, comments, or concerns about the readings. You can also discuss your relevant ideas here.</li>
-<li><strong>#pedagogy:</strong> Questions about teaching in general? Post here to ask advice from myself and your peers.</li>
-<li><strong>#meetup:</strong> If you join this channel, you will be paired up with someone else in CS 370 every week. This is your opportunity to get to know them better! Go out for boba, or maybe chat at lunch. You might find them to be a friend, study partner, or insightful co-teacher.</li>
-<li><strong>And more:</strong> Everyone is welcome to start their own channels on Slack! Want to put together a CS 61B study group? Go ahead! Want to talk fun facts about Oregon? That's cool. Want to meet up for extracurriculars like dance? Or brainstorm a new logo for CS 370? Go right ahead.</li>
-</ul>
-<h2 id="etiquette">Etiquette</h2>
-<p>There is one rule: thread up! When you want to reply to someone, <strong>do not</strong> simply post your followup underneath theirs in the same channel. Rather, hover over their message and click "Reply to thread". (If you're on a phone, just click the message you want to reply to.) Then post your reponse as a reply to theirs. This keeps our Slack organized and easy to navigate for everyone. If you see someone forget to thread up, don't be shy about reminding them. Just be nice about it.</p>
+<p><a href="{{ url_for('render_policies') }}#slack">Click here to visit the policies page and join Slack.</a></p>
 <h1 id="introduce-yourself">Introduce yourself</h1>
 <p>Take the time now to write a short (one paragraph or so) introduction for yourself, and post it in the #random channel on Slack. Also reply to at least two other folks, to get to know them a bit. You're going to be learning and working with about half the people who are in this class, and now is your chance to say hello to them!</p>
 <p>Please also add a profile picture on Slack by clicking your name and then "edit profile". This will make it easier for your classmates to remember you.</p>
@@ -40,16 +22,6 @@
 <li>Could you apply this to your own teaching (lab assisting, tutoring, or discussion)? Is there anything that you would have to change in order to use this technique effectively in the context of your own teaching?</li>
 <li>Along the same lines, what are some of the limitations of this method? What are some challenges to using this teaching technique in a different setting?</li>
 </ol>
-
-{% if week.resources['readings'] %}
-  <h1 id="respond-to-the-readings">Respond to the readings</h1>
-  <p>
-    Make a post in the #readings channel on Slack, discussing one of <a href="{{ url_for(week.resources['readings']) }}">this week's readings</a> or responding to a post by one of your peers. You should lend something new and useful to the conversion. (For example you could explain how to apply something that you learned, or offer an argument for / against one of your peers' ideas. Any input is welcome, as long as it is original and respectful.)
-  </p>
-  <p>
-    Also feel free to find a different article on your own, and respond to that instead of one of the readings. Just be sure to provide a link to it, so others can read it too.
-  </p>
-{% endif %}
 
 {% endblock %}
 

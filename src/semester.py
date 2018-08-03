@@ -27,6 +27,7 @@ META = {
     'PEER_SHADOWING': 'https://goo.gl/mUeqPV',
     'TA_SHADOWING': 'https://goo.gl/NHmzMs',
     'FINAL_SURVEY': 'https://goo.gl/forms/TOyNWeMCWsrtghdw2',
+    'TUTORING_FEEDBACK': 'https://goo.gl/forms/3wPJsyHZz9Butyw52',
 }
 
 CURRICULUM = [

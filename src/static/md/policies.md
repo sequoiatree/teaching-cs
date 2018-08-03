@@ -8,11 +8,11 @@ In this class you will have a few responsibilities every week.
 
 ## Readings and homework
 
-Readings and homework are available on the main page. Complete the corresponding assignments by their indicated due dates.
+Readings and homework are available on the main page. Complete each assignment by its indicated due date.
 
 ## Tutoring
 
-
+Lorem ipsum.
 
 # Slack
 
@@ -51,20 +51,11 @@ For exceptions or questions regarding course policy, contact Sequoia via Slack o
 
 # Grading
 
-* see Logistics.md
+{{ CLASS_CODE }} is letter-graded. It is not curved and we will not release the grading bins. The rubric is as follows:
 
-* you MUST participate at least X times
-
-* from current  syllabus:
-
-  > **CS 370 is not curved. We will not announce the grading bins or the grading rubric during or after the semester. Your grade is determined by the following factors, but may not be limited strictly thereto:**
-  >
-  > **Total points: 600**
-  >
-  > **Final exam: 60**
-  >
-  > **Midterm: 60**
-  >
-  > **Tutoring feedback: 240 Demeanor and supportiveness.Knowledge of the course material.Effectiveness of your communication.Providing the right level of guidance.**
-  >
-  > **Tutoring journals: 90** **Reflection on how you can improve.Feedback to your peers.Homework: 90Relevance to the weekly readings and lectures.Discussion of new insights not brought up in class.Participation: 60Attendance.Contribution to discussion.Timeliness setting up weekly appointments.**
+* **[30%] Participation and citizenship:** Foremost this accounts for the frequency and quality of your participation during class. A second large factor is your activity on Slack. Lastly, this accounts for your attendance and timeliness submitting assignments.
+* **[15%] Homework:** This accounts for the insightfulness of your responses, which should be relevant to the weekly readings and lecture. You should build off of class material in new ways, using your own experiences to support your claims.
+* **[20%] Tutoring feedback:** This accounts for your demeanor, supportiveness, and knowledge of the course material, as well as how clearly you communicate and whether you provide the right level of guidance.
+* **[15%] Tutoring journals:** This accounts for the insightfulness of your self-reflection, which should include an evaluation of how you plan to improve, and a clear application of ideas from class. It also accounts for the usefulness of the feedback you provide to your peers.
+* **[10%] Midterm exam:** This accounts for the in-class midterm exam.
+* **[10%] Final exam:** This accounts for the in-class final exam.
