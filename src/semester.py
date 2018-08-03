@@ -19,6 +19,7 @@ META = {
     'SLACK': 'https://cs370fall2018.slack.com/',
     'SLACK_INVITE': 'https://goo.gl/r8aG6g',
     'TUTORING_HOURS_PER_WEEK': 3,
+    'TUTORING_HOURS_PER_WEEK_TA': 1,
     'TIME_UNTIL_HOMEWORK_RELEASED': timedelta(0),
     'TIME_UNTIL_JOURNAL_RELEASED': timedelta(5),
     'TIME_UNTIL_HOMEWORK_DUE': timedelta(6, 23, 59),

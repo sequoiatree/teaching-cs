@@ -1,6 +1,10 @@
-# Join Slack
+# Read our policies
 
-[Click here to visit the policies page and join Slack.]({{ url_for('render_policies') }}#slack)
+I strongly recommend reading through the entire [policies page]({{ url_for('render_policies') }}), since it is not very long. Here are the highlights:
+
+* First and foremost, join Slack. You can find the invite [here]({{ url_for('render_policies') }}#slack), along with the associated policies.
+* Then read about your [teaching requirement]({{ url_for('render_policies') }}#tutoring). If you have any questions, ask them in the #tutoring channel on Slack.
+* And last but not least, familiarize yourself with [the rubric]({{ url_for('render_policies') }}#grading). Note the emphasis on participation and citizenship. This will be the most selective part of your grade, and to get a good score you'll have to contribute frequent, insightful comments both in class and on Slack.
 
 # Introduce yourself
 

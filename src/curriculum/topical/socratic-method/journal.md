@@ -1,1 +1,1 @@
-* What was your experience using the Socratic method this week? In what situations was it particularly good? Do you think it was beneficial for the student? Was it effective or ineffective? Why? What would you change about your usage of the Socratic method next time?
+* What was your experience using the Socratic method this week? When was it particularly effective or ineffective? Why? Do you think it was beneficial for the student? What would you change about your usage of the Socratic method next time?

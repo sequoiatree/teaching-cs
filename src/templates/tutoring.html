@@ -2,6 +2,10 @@
 
 {% block resource_content %}
 
+<p>
+  By the end of this tutoring cycle, you should have completed about {{ TUTORING_HOURS_PER_WEEK_TA * week.number if SUNDAY_OF_BREAK_WEEK and week.date < SUNDAY_OF_BREAK_WEEK else TUTORING_HOURS_PER_WEEK_TA * (week.number + 1) }} hours of tutoring / CSM if you're a TA, or about {{ TUTORING_HOURS_PER_WEEK * week.number if SUNDAY_OF_BREAK_WEEK and week.date < SUNDAY_OF_BREAK_WEEK else TUTORING_HOURS_PER_WEEK * (week.number + 1) }} hours of tutoring / CSM if you're not a TA.
+</p>
+
 <h1 id="assignment">Assignment</h1>
 
 {{ CONTENT-0 }}
@@ -25,15 +29,11 @@
 <h1 id="review">Review</h1>
 
 <p>
-  After each of your appointments this week (discussion, group tutoring, and / or one-on-one tutoring) compose an email that includes the following points. Then send it to the student(s) who attended. Also include a copy in a document called "Review {{ week.number }}" in your homework folder.
+  After each appointment this week which you plan to count toward your <a href="{{ url_for('render_policies') }}#tutoring">teaching requirement</a>, compose an email that includes the following points. Then send it to the student(s) who attended. Also include a copy of your email in a document called "Review {{ week.number }}" in your homework folder.
 </p>
 
 <ul><li>A recap of what you taught.</li></ul>
 <ul><li>Some resources you think your student(s) would benefit from studying. (Please consider carefully which resources you send them. In particular, what level of understanding do you want to target, and regarding what topics?) If you will see the same student(s) again, ask them to read and complete the relevant resources before then.</li></ul>
 <ul><li>A link to the feedback form: <a href="{{ TUTORING_FEEDBACK }}">{{ TUTORING_FEEDBACK }}</a>.</li></ul>
-
-<p>
-  You should do this for any teaching appointment which you plan to count toward your <a href="{{ url_for('render_policies') }}#tutoring">weekly teaching requirement</a>.
-</p>
 
 {% endblock %}
