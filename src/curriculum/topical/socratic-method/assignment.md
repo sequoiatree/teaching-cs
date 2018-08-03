@@ -1,0 +1,1 @@
+* Use the Socratic method at least a little bit in each of your appointments this week. Consider preparing some questions beforehand.

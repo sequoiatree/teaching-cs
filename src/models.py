@@ -16,6 +16,14 @@ RESOURCE_TYPES = {
     'tutoring': lambda wk: f'Due {(wk.date + META["TIME_UNTIL_JOURNAL_DUE"]).strftime("%b %d")}',
 }
 
+RESOURCE_TEMPS = {
+    'readings': ['readings'],
+    'homework': ['homework'],
+    'tutoring': ['assignment', 'journal'],
+}
+
+RESOURCE_FILES = sum(RESOURCE_TEMPS.values(), [])
+
 class Week():
 
     def __init__(self, index, topics):
@@ -26,7 +34,7 @@ class Week():
         self.date = (META['SUNDAY_OF_FIRST_WEEK'] + timedelta(7) * self.index)
         self.topics = [Topic(topic) for topic in topics]
         self.title = render_list([topic.title for topic in self.topics])
-        self.files = {type: [] for type in RESOURCE_TYPES}
+        self.files = {type: [] for type in RESOURCE_FILES}
 
     def load_files(self, type):
         filename = f'{type}.md'
@@ -45,18 +53,19 @@ class Week():
                 load_file(WEEKS[self.index + 1], next_path)
 
     def load_resources(self):
-        self.resources = {type: self.load_resource(type) for type in RESOURCE_TYPES}
+        self.resources = {template: self.load_resource(template, *RESOURCE_TEMPS[template])
+                          for template in RESOURCE_TEMPS}
 
-    def load_resource(self, type):
-        in_files = self.files[type]
-        if in_files:
+    def load_resource(self, template, *types):
+        files_by_type = [self.files[type] for type in types]
+        if any(files_by_type):
             out_dir = self.path
-            out_file = self.template(type)
+            out_file = self.template(template)
             makedirs(out_dir, exist_ok=True)
             if out_file not in listdir(out_dir):
-                in_content = '\n\n'.join(read(in_file) for in_file in in_files)
-                make_html(f'{type}', in_content, join(out_dir, out_file))
-            return self.renderer(type)
+                in_content = ['\n\n'.join(read(file) for file in files) for files in files_by_type]
+                make_html(f'{template}', join(out_dir, out_file), *in_content)
+            return self.renderer(template)
         else:
             return None
 
@@ -85,17 +94,17 @@ class Topic():
 
     def load_resources(self):
         dir_files = listdir(self.path)
-        return {type for type in RESOURCE_TYPES if f'{type}.md' in dir_files}
+        return {type for type in RESOURCE_FILES if f'{type}.md' in dir_files}
 
 FILES = {'policies'}
 
 WEEKS = [Week(index, topics) for index, topics in enumerate(CURRICULUM)]
 
 for file in FILES:
-    make_html('file', read(join(MD_FILE_DIR, f'{file}.md')), f'templates/{file}.html')
+    make_html('file', f'templates/{file}.html', read(join(MD_FILE_DIR, f'{file}.md')))
 
 for week in WEEKS:
-    for type in RESOURCE_TYPES:
+    for type in RESOURCE_FILES:
         week.load_files(type)
 
 for week in WEEKS:

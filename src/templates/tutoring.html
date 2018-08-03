@@ -2,19 +2,35 @@
 
 {% block resource_content %}
 
-{{ CONTENT }}
+<h1 id="assignment">Assignment</h1>
 
-<h1 id="review-email">Review email</h1>
+{{ CONTENT-0 }}
+
+<h1 id="journal-prompt">Journal prompt</h1>
+
+<p>
+  After each appointment this week (discussion, group tutoring, or one-on-one tutoring) respond to the following prompts in the  #journal-{{ week.number }} channel on Slack.
+</p>
+
+<ul>
+  <li>Summarize the appointment. (For example: How do you feel about it? Do you think the student was following? What signs let you pick up on this? What could you have done better? etc.)</li>
+</ul>
+
+{{ CONTENT-1 }}
+
+<p>
+  Then take the time to read some of your peers' responses too, and reply to at least two of them. Lend something productive and insightful to the conversation. (For example, talk about what you would've done differently in their position, or whether you're going to adapt something similar for your own lessons. Maybe ask them something about their appointment, etc.)
+</p>
+
+<h1 id="review">Review</h1>
 
 <p>
   After each of your appointments this week (discussion, group tutoring, and / or one-on-one tutoring) compose an email that includes the following points. Then send it to the student(s) who attended. Also include a copy in a document called "Review {{ week.number }}" in your homework folder.
 </p>
 
-<ul>
-  <li>A recap of what you taught.</li>
-  <li>Some resources you think your student(s) would benefit from studying. (Please consider carefully which resources you send them. In particular, what level of understanding do you want to target, and regarding what topics?) If you will see the same student(s) again, ask them to read and complete the relevant resources before then.</li>
-  <li>A link to the feedback form: {{ TUTORING_FEEDBACK }}</li>
-</ul>
+<ul><li>A recap of what you taught.</li></ul>
+<ul><li>Some resources you think your student(s) would benefit from studying. (Please consider carefully which resources you send them. In particular, what level of understanding do you want to target, and regarding what topics?) If you will see the same student(s) again, ask them to read and complete the relevant resources before then.</li></ul>
+<ul><li>A link to the feedback form: <a href="{{ TUTORING_FEEDBACK }}">{{ TUTORING_FEEDBACK }}</a>.</li></ul>
 
 <p>
   You should do this for any teaching appointment which you plan to count toward your <a href="{{ url_for('render_policies') }}#tutoring">weekly teaching requirement</a>.

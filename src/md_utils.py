@@ -9,9 +9,10 @@ MARKDOWN_EXTENSIONS = (
     'toc',
 )
 
-def make_html(template, in_content, out_file):
-    template_content = read(f'templates/{template}.html')
-    out_content = template_content.replace('{{ CONTENT }}', parse_md(in_content))
+def make_html(template, out_file, *in_content):
+    out_content = read(f'templates/{template}.html')
+    for i in range(len(in_content)):
+        out_content = out_content.replace(f'{{{{ CONTENT-{i} }}}}', parse_md(in_content[i]))
     write(out_file, out_content)
 
 def read_md(file):
