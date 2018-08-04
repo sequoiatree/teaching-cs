@@ -3,7 +3,7 @@
 {% block resource_content %}
 
 <p>
-  By the end of this tutoring cycle, you should have completed about {{ TUTORING_HOURS_PER_WEEK_TA * week.number if SUNDAY_OF_BREAK_WEEK and week.date < SUNDAY_OF_BREAK_WEEK else TUTORING_HOURS_PER_WEEK_TA * (week.number + 1) }} hours of tutoring / CSM if you're a TA, or about {{ TUTORING_HOURS_PER_WEEK * week.number if SUNDAY_OF_BREAK_WEEK and week.date < SUNDAY_OF_BREAK_WEEK else TUTORING_HOURS_PER_WEEK * (week.number + 1) }} hours of tutoring / CSM if you're not a TA.
+  By the end of this tutoring cycle, you should have completed about {{ TUTORING_HOURS_PER_WEEK_TA * week.number if SUNDAY_OF_BREAK_WEEK and week.date < SUNDAY_OF_BREAK_WEEK else TUTORING_HOURS_PER_WEEK_TA * (week.number - 1) }} hours of tutoring / CSM if you're a TA, or about {{ TUTORING_HOURS_PER_WEEK * week.number if SUNDAY_OF_BREAK_WEEK and week.date < SUNDAY_OF_BREAK_WEEK else TUTORING_HOURS_PER_WEEK * (week.number - 1) }} hours of tutoring / CSM if you're not a TA.
 </p>
 
 <h1 id="assignment">Assignment</h1>
@@ -19,7 +19,7 @@
 </p>
 
 <ul>
-  <li>Summarize the appointment. (For example: How do you feel about it? Do you think the student was following? What signs let you pick up on this? What could you have done better? etc.)</li>
+  <li>Briefly summarize the appointment. (For example: How do you feel about it? Do you think the student was following? What signs let you pick up on this? What could you have done better? etc.)</li>
 </ul>
 
 <ul>

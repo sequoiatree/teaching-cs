@@ -17,6 +17,8 @@ RESOURCE_TYPES = {
 }
 
 RESOURCE_TEMPS = {
+    # If a template only draws from one constituent type, they ought to share the same name.
+    # Otherwise, the template name ought to be distinct from the name of each constituent type.
     'readings': ['readings'],
     'homework': ['homework'],
     'tutoring': ['assignment', 'journal'],
@@ -53,18 +55,22 @@ class Week():
                 load_file(WEEKS[self.index + 1], next_path)
 
     def load_resources(self):
-        self.resources = {template: self.load_resource(template, *RESOURCE_TEMPS[template])
-                          for template in RESOURCE_TEMPS}
+        self.resources = {template: self.load_resource(template) for template in RESOURCE_TEMPS}
 
-    def load_resource(self, template, *types):
-        files_by_type = [self.files[type] for type in types]
-        if any(files_by_type):
+    def load_resource(self, template):
+        types = RESOURCE_TEMPS[template]
+        files = [self.files[type] for type in types]
+        if any(files):
             out_dir = self.path
             out_file = self.template(template)
             makedirs(out_dir, exist_ok=True)
             if out_file not in listdir(out_dir):
-                in_content = ['\n\n'.join(read(file) for file in files) for files in files_by_type]
-                make_html(f'{template}', join(out_dir, out_file), *in_content)
+                in_content = ['\n\n'.join(read(file) for file in files_by_type)
+                              for files_by_type in files]
+                if len(types) > 1:
+                    in_content = [template_html(type, content_by_type)
+                                  for type, content_by_type in zip(types, in_content)]
+                make_html(template, join(out_dir, out_file), *in_content)
             return self.renderer(template)
         else:
             return None

@@ -10,10 +10,16 @@ MARKDOWN_EXTENSIONS = (
 )
 
 def make_html(template, out_file, *in_content):
-    out_content = read(f'templates/{template}.html')
-    for i in range(len(in_content)):
-        out_content = out_content.replace(f'{{{{ CONTENT-{i} }}}}', parse_md(in_content[i]))
-    write(out_file, out_content)
+    write(out_file, template_html(template, *in_content))
+
+def template_html(template, *in_content):
+    if any(in_content):
+        out_content = read(f'templates/{template}.html')
+        for i in range(len(in_content)):
+            out_content = out_content.replace(f'{{{{ CONTENT-{i} }}}}', parse_md(in_content[i]))
+        return out_content
+    else:
+        return ''
 
 def read_md(file):
     return parse_md(read(file))

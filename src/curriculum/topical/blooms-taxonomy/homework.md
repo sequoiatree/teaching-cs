@@ -14,11 +14,13 @@ Note that a problem may appear at different levels of the taxonomy for different
 1. A student has never learned asymptotic analysis. You ask them how many times the recursive `fibonacci` function will get invoked when you make the function call `fibonacci(n)`. The student will have to **analyze** the `fibonacci` function to determine the underlying structure of function calls.
 2. A student has had significant experience with asymptotic analysis, and has seen many examples of recursive functions that grow exponentially. You ask them how many times the recursive `fibonacci` function will get invoked when you make the function call `fibonacci(n)`. The student will have to **apply** a procedure they're already familiar with.
 
+Also keep in mind that problems high on the taxonomy are not necessarily hard, and problems low on the taxonomy are not necessarily easy. This is just a way of classifying problems. Both easy and hard ones can occur at any level.
+
 For each level of Bloom's taxonomy, provide an example from a computer science class you teach. Also specify the student's prior knowledge base and why it's important. Justify all your answers in a few setences.
 
 # Analyzing a problem with Bloom's taxonomy
 
-In ~~the film _2001: A Space Odyssey_~~ the year 2001, Bloom's taxonomy was revised to include another axis measuring the level of abstraction of the task at hand. These resources will explain how it works:
+In 2001 (the year, not the space odyssey), Bloom's taxonomy was revised to include another axis measuring the level of abstraction of the task at hand. These resources will explain how it works:
 
 * [Iowa State's model of Bloom's revised taxonomy](http://www.celt.iastate.edu/wp-content/uploads/2015/09/RevisedBloomsHandout-1.pdf)
 * [Iowa State's associated explanation of Bloom's revised taxonomy](http://www.celt.iastate.edu/teaching/effective-teaching-practices/revised-blooms-taxonomy/blooms-revised-taxonomy-model)
