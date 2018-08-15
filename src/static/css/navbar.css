@@ -16,6 +16,7 @@
 
 .navbar a:first-child {
   float: left;
+  padding-left: 8px;
 }
 
 .navbar a:not(:first-child) {
