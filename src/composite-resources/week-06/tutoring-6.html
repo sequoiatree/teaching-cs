@@ -1,0 +1,48 @@
+{% extends 'resource.html' %}
+
+{% block resource_content %}
+
+<p>
+  By the end of this tutoring cycle, you should have completed about {{ TUTORING_HOURS_PER_WEEK_TA * week.number if SUNDAY_OF_BREAK_WEEK and week.date < SUNDAY_OF_BREAK_WEEK else TUTORING_HOURS_PER_WEEK_TA * (week.number - 1) }} hours of tutoring / CSM if you're a TA, or about {{ TUTORING_HOURS_PER_WEEK * week.number if SUNDAY_OF_BREAK_WEEK and week.date < SUNDAY_OF_BREAK_WEEK else TUTORING_HOURS_PER_WEEK * (week.number - 1) }} hours of tutoring / CSM if you're not a TA.
+</p>
+
+<h1 id="assignment">Assignment</h1>
+
+<ul>
+<li>This week, take some time (10 to 15 minutes) after each of your tutoring / CSM appointments to set up concrete, measurable goals with at least one student who attended.<ul>
+<li>Ask what grade they're aiming for, what time commitment they're willing to put into studying, how they're going to study, what resources they will use, etc. Help them turn that information into a schedule that details what they need to do daily / weekly to stay caught-up. Make sure your student(s) keep track of these goals in an objective manner. Personally I'd suggest that they keep a notebook or document where they can log how long they study each day, as well as what they study and how they study it.</li>
+<li>If you teach the same student(s) often, tell them to present their progress to you next week.</li>
+<li>By the way, this is also a great opportunity to talk about fixed and growth mindsets with your student(s), if you think it would be beneficial!</li>
+</ul>
+</li>
+</ul>
+
+<h1 id="journal-prompt">Journal prompt</h1>
+
+<p>
+  After each appointment this week (discussion, group tutoring, or one-on-one tutoring) respond to the following prompts in the  #journal-{{ week.number }} channel on Slack.
+</p>
+
+<ul>
+  <li>Briefly summarize the appointment. (For example: How do you feel about it? Do you think the student was following? What signs let you pick up on this? What could you have done better? etc.)</li>
+</ul>
+
+<ul>
+<li>How did your goal-setting appointment go with your student(s)? Were they keen on the idea, or not? If not, did you justify it (for instance, with the education research we presented in lecture)? How was the goal-setting appointment structured? Did you come away with reasonable, actionable, measurable goals that they will be able to stick to? How did you encourage them to use the schedule that you came up with? For instance, will you be doing email check-ins with them for the next week or so? Would you do this for future students of yours who are struggling in the class?</li>
+</ul>
+
+<p>
+  Then take the time to read some of your peers' responses too, and reply to at least two of them. Lend something productive and insightful to the conversation. (For example, talk about what you would've done differently in their position, or whether you're going to adapt something similar for your own lessons. Maybe ask them something about their appointment, etc.)
+</p>
+
+<h1 id="review">Review</h1>
+
+<p>
+  After each appointment this week which you plan to count toward your <a href="{{ url_for('render_policies') }}#tutoring">teaching requirement</a>, compose an email that includes the following points. Then send it to the student(s) who attended. Also include a copy of your email in a document called "Review {{ week.number }}" in your homework folder.
+</p>
+
+<ul><li>A recap of what you taught.</li></ul>
+<ul><li>Some resources you think your student(s) would benefit from studying. (Please consider carefully which resources you send them. In particular, what level of understanding do you want to target, and regarding what topics?) If you will see the same student(s) again, ask them to read and complete the relevant resources before then.</li></ul>
+<ul><li>A link to the feedback form: <a href="{{ TUTORING_FEEDBACK }}">{{ TUTORING_FEEDBACK }}</a>.</li></ul>
+
+{% endblock %}

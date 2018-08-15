@@ -1,12 +1,5 @@
 from os import mkdir
 
-from markdown import markdown
-
-MARKDOWN_EXTENSIONS = (
-    'extra',
-    'toc',
-)
-
 LOWERCASE_TITLE_WORDS = {'A', 'An', 'The', 'In', 'Of', 'To', 'With', 'And', 'For'}
 
 def hyphen_case(text):
@@ -48,6 +41,3 @@ def render_list(elements, singular=None, plural=None):
         if word in LOWERCASE_TITLE_WORDS:
             words[i] = word.lower()
     return ' '.join(words)
-
-def make_link(text, link):
-    return f'<a href="{link}">{text}</a>'

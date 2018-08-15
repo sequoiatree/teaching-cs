@@ -1,0 +1,13 @@
+{% macro render_staff(staff_roster) %}
+{% for staff in staff_roster %}
+  <div class="row">
+    <img src="{{ url_for('static', filename='img/{}'.format(staff['img'])) }}.jpg">
+    <div class="bio">
+      <strong id="{{ staff['name'] }}">{{ staff['link'] }}</strong>
+      <br/>
+      <em>{{ staff['email'] }}</em>
+      {{ staff['bio']|safe }}
+    </div>
+  </div>
+{% endfor %}
+{% endmacro %}

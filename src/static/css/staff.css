@@ -1,0 +1,22 @@
+img {
+  border-radius: 25%;
+  height: 150px;
+  width: 150px;
+  margin: 0 10px 10px 0;
+}
+
+@media screen and (min-width: 450px) {
+  img {
+    float: left;
+  }
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.bio {
+  overflow: hidden;
+}

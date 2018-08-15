@@ -2,6 +2,8 @@ from datetime import timedelta
 from os import listdir, makedirs
 from os.path import join
 
+from flask import Markup
+
 from semester import CURRICULUM, META
 from utils import *
 
@@ -105,6 +107,14 @@ class Topic():
 FILES = {'policies'}
 
 WEEKS = [Week(index, topics) for index, topics in enumerate(CURRICULUM)]
+
+STAFF = {snake_case(key): [read_bio(name, join(f'{META["TERM"].lower()}-{META["YEAR"]}', key))
+                           for name in val]
+         for key, val in META['STAFF'].items()}
+
+INSTRUCTOR = Markup(render_list(
+    [staff['link'] for staff in STAFF['instructors']], 'Instructor', 'Instructors'
+))
 
 for file in FILES:
     make_html('file', f'templates/{file}.html', read(join(MD_FILE_DIR, f'{file}.md')))

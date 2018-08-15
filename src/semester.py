@@ -11,10 +11,13 @@ META = {
     'TERM': 'Fall',
     'SUNDAY_OF_FIRST_WEEK': datetime(2018, 8, 19),
     'SUNDAY_OF_BREAK_WEEK': datetime(2018, 11, 18), # None if there's no break.
-    'INSTRUCTOR': Markup(render_list([
-        'Christopher Hunn',
-        make_link('Sequoia Eyzaguirre', 'https://sequoia-tree.github.io'),
-    ], 'Instructor', 'Instructors')),
+    'STAFF': {
+        'instructors': ['christopher-hunn', 'sequoia-eyzaguirre', 'bryan-tong'],
+        'teaching-interns': sorted({
+            'asli-akalin',
+            'cesar-plascencia-zuniga',
+        })
+    },
     'SCHEDULER': 'http://cs370scheduler.org',
     'SLACK': 'https://cs370fall2018.slack.com/',
     'SLACK_INVITE': 'https://goo.gl/r8aG6g',
@@ -33,11 +36,11 @@ META = {
 
 CURRICULUM = [
     ['introduction', 'socratic-method'],
-    ['learning-models', 'blooms-taxonomy'],
+    ['concept-mapping', 'learning-models', 'blooms-taxonomy'],
     ['misconception-theory', 'expert-blindness', '2-sigma'],
     ['memory', 'growth-mindset'],
     ['teaching-recursion'],
-    ['setting-goals'],
+    ['motivation', 'setting-goals'],
     ['guest-speaker', 'flipped-classroom'],
     ['midterm', 'applying-to-staff'],
     ['group-teaching-exercise'],

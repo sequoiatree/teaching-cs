@@ -1,5 +1,8 @@
+from os import listdir
+from os.path import join
 from re import match
 
+from flask import Markup
 from markdown import markdown
 
 from py_utils import *
@@ -30,6 +33,7 @@ def parse_md(text):
     return text
 
 def fix_indentation(text):
+    # TODO: Fix.
     lines = text.split('\n')
     for i in range(len(lines)):
         line = lines[i]
@@ -51,3 +55,26 @@ def fix_indentation(text):
 
 def md_to_html(text):
     return markdown(text, extensions=MARKDOWN_EXTENSIONS, output_format='html5')
+
+def read_bio(name, directory):
+    img = name if f'{name}.jpg' in listdir('static/img') else 'staff'
+    with open(f'staff/{directory}/{name}.md', 'r') as file:
+        name = file.readline().strip('\n')
+        file.readline()
+        email = file.readline().strip('\n')
+        file.readline()
+        bio = parse_md(file.readline()).strip('\n')
+        file.readline()
+        website = file.readline().strip('\n')
+    info = {
+        'img': img,
+        'name': name,
+        'email': make_link(email, f'mailto:{email}'),
+        'bio': bio,
+        'website': website,
+        'link': make_link(name, website),
+    }
+    return {key: Markup(val) for key, val in info.items()}
+
+def make_link(text, link):
+    return f'<a href="{link}">{text}</a>' if link else text

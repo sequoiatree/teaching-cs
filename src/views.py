@@ -1,7 +1,7 @@
 from flask import render_template
 
 from app import app
-from models import FILES, RESOURCE_TYPES, WEEKS
+from models import FILES, INSTRUCTOR, RESOURCE_TYPES, STAFF, WEEKS
 from semester import META
 from utils import *
 
@@ -19,7 +19,15 @@ def make_template(route, renderer, template_function, *template_args):
 
 @app.route('/')
 def render_index():
-    return render_template('index.html', WEEKS=WEEKS, RESOURCE_TYPES=RESOURCE_TYPES, **META)
+    return render_template('index.html',
+                           WEEKS=WEEKS,
+                           RESOURCE_TYPES=RESOURCE_TYPES,
+                           INSTRUCTOR=INSTRUCTOR,
+                           **META)
+
+@app.route('/staff')
+def render_staff():
+    return render_template('staff.html', **STAFF)
 
 for week in WEEKS:
     for type in RESOURCE_TYPES:

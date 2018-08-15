@@ -1,0 +1,4 @@
+* This week, take some time (10 to 15 minutes) after each of your tutoring / CSM appointments to set up concrete, measurable goals with at least one student who attended.
+  * Ask what grade they're aiming for, what time commitment they're willing to put into studying, how they're going to study, what resources they will use, etc. Help them turn that information into a schedule that details what they need to do daily / weekly to stay caught-up. Make sure your student(s) keep track of these goals in an objective manner. Personally I'd suggest that they keep a notebook or document where they can log how long they study each day, as well as what they study and how they study it.
+  * If you teach the same student(s) often, tell them to present their progress to you next week.
+  * By the way, this is also a great opportunity to talk about fixed and growth mindsets with your student(s), if you think it would be beneficial!

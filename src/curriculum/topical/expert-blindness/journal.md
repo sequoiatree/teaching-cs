@@ -1,0 +1,1 @@
+* At any point during your appointment, did you assume the student knew something they didn't? How did you course-correct? What can you do in the future to steer clear of expert blindness?

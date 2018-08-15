@@ -1,4 +1,5 @@
 {% import 'include.html' as include %}
+{% import 'macros.html' as macros %}
 
 <!DOCTYPE HTML>
 
@@ -21,6 +22,7 @@
     <div class="page">
       <a href="{{ url_for('render_index') }}">CS 370</a>
       <a href="{{ url_for('render_policies') }}">Policies</a>
+      <a href="{{ url_for('render_staff') }}">Staff</a>
       <a href="{{ SLACK }}">Slack</a>
       <a href="{{ SCHEDULER }}">Scheduler</a>
       <a href="javascript:void(0);" class="icon"
