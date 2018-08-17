@@ -1,0 +1,1 @@
+* Summarize the practice problem(s) you designed for this appointment. What were they meant to convey? Did they work out as intended? Were they useful to your lesson? Provide specific examples. What was the student's thought process while solving your question(s)? How would you improve your practice problem(s) for future use?

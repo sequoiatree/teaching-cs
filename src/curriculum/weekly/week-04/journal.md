@@ -1,0 +1,1 @@
+* What was the focus of this appointment? A particular topic, midterm prep, or something else perhaps? How was this reflected in the structure of the appointment? Was it effective? Provide some examples.

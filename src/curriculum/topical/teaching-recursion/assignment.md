@@ -1,0 +1,1 @@
+* While you're lesson-planning, remember to carefully consider your explanations. Also think about the organization of your explanations and practice problems. The goal is to make everything as intuitive as possible.

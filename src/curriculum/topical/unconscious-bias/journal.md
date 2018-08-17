@@ -1,0 +1,1 @@
+* Recall a moment from your appointment where you think your unconscious bias may have surfaced or perhaps prevented you from doing your best work.

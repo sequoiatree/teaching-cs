@@ -1,0 +1,1 @@
+* How did you assess the student's (or students') knowledge base at the beginning of the session? How did you tailor you appointment to their level of understanding? Do you think you did a good job targeting their comfort zone with the material? Provide an example or two to support your reflection.

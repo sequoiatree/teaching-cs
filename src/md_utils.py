@@ -57,7 +57,8 @@ def md_to_html(text):
     return markdown(text, extensions=MARKDOWN_EXTENSIONS, output_format='html5')
 
 def read_bio(name, directory):
-    img = name if f'{name}.jpg' in listdir('static/img') else 'staff'
+    jpg, png, imgs = f'{name}.jpg', f'{name}.png', listdir('static/img')
+    img = jpg if jpg in imgs else png if png in imgs else 'staff.jpg'
     with open(f'staff/{directory}/{name}.md', 'r') as file:
         name = file.readline().strip('\n')
         file.readline()

@@ -1,0 +1,1 @@
+* How did you go about making lesson plans for your tutoring appointments this week? Did you review any specific resources? How did you organize the topics and questions in an intuitive fashion? Do you think it paid off during your appointment? Provide specific examples.

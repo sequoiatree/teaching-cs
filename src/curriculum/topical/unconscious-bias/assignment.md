@@ -1,0 +1,1 @@
+* Be especially vigilant of your unconscious biases while tutoring this week.

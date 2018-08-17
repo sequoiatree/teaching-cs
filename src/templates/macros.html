@@ -1,7 +1,7 @@
 {% macro render_staff(staff_roster) %}
 {% for staff in staff_roster %}
   <div class="row">
-    <img src="{{ url_for('static', filename='img/{}'.format(staff['img'])) }}.jpg">
+    <img src="{{ url_for('static', filename='img/{}'.format(staff['img'])) }}">
     <div class="bio">
       <strong id="{{ staff['name'] }}">{{ staff['link'] }}</strong>
       <br/>

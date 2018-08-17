@@ -1,0 +1,1 @@
+* Reflect on a time this semester when you encountered a student who showed possible or explicit signs of GPS syndrome. (Such interactions are most common in office hours, lab, and project / homework parties.) What were their concerns / motives? How did you handle the situation? Looking back, would you handle it differently in the future?

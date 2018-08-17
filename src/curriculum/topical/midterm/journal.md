@@ -1,0 +1,1 @@
+* What skill did you try to develop in this appointment? Why? How did you work it into your teaching? Was it effective, or not? Why? Provide some examples. What would you improve on next time?

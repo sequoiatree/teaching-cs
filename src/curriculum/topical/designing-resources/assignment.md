@@ -1,0 +1,1 @@
+* This week, take some time before each appointment to design one or two practice problems of your own, on the topics that you'll be teaching. Consider what skill level your practice problems will target, as well as what core concept or edge case they will be meant to convey. Incorporate these problems into your lesson plan.

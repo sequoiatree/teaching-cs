@@ -1,0 +1,1 @@
+* Think about a time this semester when your student(s) exhibited negativity in the form of self-doubt, lack of self-efficacy or self-regulation, or the expression of an external locus of control. How did you recognize their negativity? Did you address it, and if you did, how? Is there anything you'd do differently next time you find yourself in a similar predicament?

@@ -4,7 +4,7 @@ This week you'll be shadowing one of your peers in this class! This is time sens
 
 ## When you're signing up to shadow
 
-* Sign up to shadow one of your peers on [this form]({{ PEER_SHADOWING_1 }}). Each person will shadow one other person, and each person will be shadowed once. It might make things easier to partner up with someone — that is, you shadow one of their sections, and they shadow one of your sections. If you sign up to shadow someone who has already scheduled their appointments, make sure you can actually make the appointment time! You may also choose to shadow someone's CSM section
+* Sign up to shadow one of your peers on [this form]({{ PEER_SHADOWING_2 }}). Each person will shadow one other person, and each person will be shadowed once. It might make things easier to partner up with someone — that is, you shadow one of their sections, and they shadow one of your sections. If you sign up to shadow someone who has already scheduled their appointments, make sure you can actually make the appointment time! You may also choose to shadow someone's CSM section
 * After you have picked someone to shadow, sign up for the specific appointment of theirs that you'll be attending.
   * On the weekly tutoring form, find the appointment that you'll be shadowing and write your name in the "Shadow Tutor" column. Let the tutor know, as soon as you do.
   * Mark the place and time on your calendar! Do not forget about the appointment you're shadowing!

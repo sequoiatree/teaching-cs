@@ -1,0 +1,1 @@
+* Reflect on your most frustrating moment learning computer science. What made the topic / situation so difficult? What resources do you wish you had? How did you get through it? What would you do now, as a teacher, to help a student struggling with a similar problem?
