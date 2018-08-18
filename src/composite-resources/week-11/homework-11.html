@@ -16,5 +16,10 @@
 <li>Were the students ever disengaged? How could you improve on that?</li>
 </ul>
 
+{% if week.quiz %}
+  <h1 id="quiz">Quiz</h1>
+  <p>Complete <a href="{{ week.quiz }}">the short weekly quiz</a>.</p>
+{% endif %}
+
 {% endblock %}
 

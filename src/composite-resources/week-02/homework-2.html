@@ -40,5 +40,10 @@
 </ul>
 <p>You shouldn't make yours exactly like these, but hopefully they give you an idea of what we expect.</p>
 
+{% if week.quiz %}
+  <h1 id="quiz">Quiz</h1>
+  <p>Complete <a href="{{ week.quiz }}">the short weekly quiz</a>.</p>
+{% endif %}
+
 {% endblock %}
 

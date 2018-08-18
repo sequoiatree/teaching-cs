@@ -25,5 +25,10 @@ Read these two articles:</p>
 <li>How do you think it could be applied to CS 61A, CS 61B, or CS 61C? Do you think it would work well? Why or why not?</li>
 </ul>
 
+{% if week.quiz %}
+  <h1 id="quiz">Quiz</h1>
+  <p>Complete <a href="{{ week.quiz }}">the short weekly quiz</a>.</p>
+{% endif %}
+
 {% endblock %}
 

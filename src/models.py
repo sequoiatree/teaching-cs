@@ -37,6 +37,7 @@ class Week():
         self.path = f'composite-resources/{self.directory}'
         self.date = (META['SUNDAY_OF_FIRST_WEEK'] + timedelta(7) * self.index)
         self.topics = [Topic(topic) for topic in topics]
+        self.quiz = quiz
         self.title = render_list([topic.title for topic in self.topics])
         self.files = {type: [] for type in RESOURCE_FILES}
 

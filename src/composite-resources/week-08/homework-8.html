@@ -18,5 +18,10 @@
 <li>Also reflect on one thing from this list that you could improve on, or want to try this week. What appeals to you about the technique? What circumstances is it best suited for, and why? How can you see yourself using it?</li>
 </ul>
 
+{% if week.quiz %}
+  <h1 id="quiz">Quiz</h1>
+  <p>Complete <a href="{{ week.quiz }}">the short weekly quiz</a>.</p>
+{% endif %}
+
 {% endblock %}
 

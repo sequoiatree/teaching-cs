@@ -43,5 +43,10 @@
 <p>The point of this exercise is not to identify yourself or anyone else as mysogynist, racist, etc. Rather, the point is to help you recognize your own unconscious biases so that you can consciously mitigate them while teaching.</p>
 <p>When you're done with the test, reflect briefly on your experience taking it.</p>
 
+{% if week.quiz %}
+  <h1 id="quiz">Quiz</h1>
+  <p>Complete <a href="{{ week.quiz }}">the short weekly quiz</a>.</p>
+{% endif %}
+
 {% endblock %}
 

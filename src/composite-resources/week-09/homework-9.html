@@ -28,5 +28,10 @@
 <li>When you finish, convert your notes into a review of the tutoring session. There's no specific format: free-form, bullet list, etc are all fine. Put it in your homework folder. You do not have to disclose your review to the person you shadowed, unless you want to do so.</li>
 </ul>
 
+{% if week.quiz %}
+  <h1 id="quiz">Quiz</h1>
+  <p>Complete <a href="{{ week.quiz }}">the short weekly quiz</a>.</p>
+{% endif %}
+
 {% endblock %}
 

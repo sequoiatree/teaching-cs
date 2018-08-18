@@ -40,7 +40,7 @@ META = {
 }
 
 CURRICULUM_WITH_QUIZZES = [
-    [['introduction', 'socratic-method'], None],
+    [['introduction', 'socratic-method'], 'test quiz'],
     [['concept-mapping', 'learning-models', 'blooms-taxonomy'], None],
     [['misconception-theory', 'expert-blindness', '2-sigma'], None],
     [['memory', 'growth-mindset'], None],

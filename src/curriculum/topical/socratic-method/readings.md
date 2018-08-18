@@ -10,4 +10,4 @@
 
 
 
-*  [A paper analyzing the Socratic method through the lens of self-dtermination theory.](https://www.researchgate.net/publication/258374521_What_is_Socratic_Method_The_Analysis_of_Socratic_Method_through_Self_Determination_Theory_and_Unified_Learning_Model)
+*  [A paper analyzing the Socratic method through the lens of self-determination theory.](https://www.researchgate.net/publication/258374521_What_is_Socratic_Method_The_Analysis_of_Socratic_Method_through_Self_Determination_Theory_and_Unified_Learning_Model)

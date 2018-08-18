@@ -14,5 +14,10 @@
 <h1 id="correcting-a-misconception">Correcting a misconception</h1>
 <p>Think back to a time when you had a misconception in the class you're teaching now. What caused you to develop this misconception? How did you resolve it? Did someone explain it to you, and if so, do you remember their explanation? Did you see a counterexample that proved your misconception false? Or did you perhaps stumble upon the correct approach some other way? Answer these questions in your homework submission. Then write about how you would use the techniques covered in class to help a student of yours now, if they had the same misconception you described.</p>
 
+{% if week.quiz %}
+  <h1 id="quiz">Quiz</h1>
+  <p>Complete <a href="{{ week.quiz }}">the short weekly quiz</a>.</p>
+{% endif %}
+
 {% endblock %}
 
