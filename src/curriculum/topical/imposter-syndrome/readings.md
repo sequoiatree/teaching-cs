@@ -6,4 +6,8 @@
 
 
 
+* [An article about one UC Berkeley CS student's struggle with imposter syndrome.](https://medium.com/blueprint/fighting-impostor-syndrome-as-a-cs-student-c43859062e1)
+
+
+
 * [The Wikipedia article on the Dunning-Kruger effect.](https://en.wikipedia.org/wiki/Dunning–Kruger_effect) Specifically, you may want to consider how it affects students coming to UC Berkeley with prior experience in computer programming.

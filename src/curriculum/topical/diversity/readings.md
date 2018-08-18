@@ -3,3 +3,7 @@
 
 
 * [An interactive model of diversity, by Vi Hart and Nicky Case.](http://ncase.me/polygons/) Take a look at the links in the footer when you're done. They're very enlightening. Maybe also consider explaining this model to a Berkeley freshman. Does it overlook certain complexities present in the real world?
+
+
+
+* [An article on promoting diversity in undergraduate computer science education](https://www.kqed.org/mindshift/46839/steps-teachers-can-take-to-keep-girls-and-minorities-in-computer-science-education) and [an associated document developed by Stanford's Cynthia Lee](https://carpentries.github.io/instructor-training/files/papers/lee-create-inclusive-community-2015.pdf).

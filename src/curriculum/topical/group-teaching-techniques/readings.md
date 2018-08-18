@@ -2,4 +2,4 @@
 
 
 
-* [A research paper providing evidence for the effectiveness of group learning in college.](https://pdfs.semanticscholar.org/0b7a/4c9ec20693dd219db5c9504611857e846a6b.pdf)
+* [A research paper providing evidence for the effectiveness of group learning in college.](https://pdfs.semanticscholar.org/5d2c/c56758771ec8b41b32492fb0ce6b546d02ff.pdf?_ga=2.242880898.1653183497.1534529903-1622503552.1534529903)
