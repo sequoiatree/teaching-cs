@@ -4,7 +4,7 @@ from os.path import join
 
 from flask import Markup
 
-from semester import CURRICULUM, META
+from semester import META, CURRICULUM_WITH_QUIZZES
 from utils import *
 
 MD_FILE_DIR = 'static/md'
@@ -30,7 +30,7 @@ RESOURCE_FILES = sum(RESOURCE_TEMPS.values(), [])
 
 class Week():
 
-    def __init__(self, index, topics):
+    def __init__(self, index, topics, quiz):
         self.index = index
         self.number = self.index + 1
         self.directory = f'week-{pad(self.number, 2)}'
@@ -106,7 +106,7 @@ class Topic():
 
 FILES = {'policies'}
 
-WEEKS = [Week(index, topics) for index, topics in enumerate(CURRICULUM)]
+WEEKS = [Week(index, topics, quiz) for index, (topics, quiz) in enumerate(CURRICULUM_WITH_QUIZZES)]
 
 STAFF = {snake_case(key): [read_bio(name, join(f'{META["TERM"].lower()}-{META["YEAR"]}', key))
                            for name in val]

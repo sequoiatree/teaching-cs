@@ -39,28 +39,28 @@ META = {
     'TUTORING_FEEDBACK': 'https://goo.gl/forms/3wPJsyHZz9Butyw52',
 }
 
-CURRICULUM = [
-    ['introduction', 'socratic-method'],
-    ['concept-mapping', 'learning-models', 'blooms-taxonomy'],
-    ['misconception-theory', 'expert-blindness', '2-sigma'],
-    ['memory', 'growth-mindset'],
-    ['teaching-recursion'],
-    ['motivation', 'setting-goals'],
-    ['guest-speaker', 'flipped-classroom'],
-    ['midterm', 'applying-to-staff'],
-    ['group-teaching-exercise'],
-    ['group-teaching-techniques', 'gps-syndrome'],
-    ['imposter-syndrome', 'stereotype-threat'],
-    ['diversity', 'unconscious-bias'],
-    ['designing-resources'],
-    ['final', 'conclusion'],
+CURRICULUM_WITH_QUIZZES = [
+    [['introduction', 'socratic-method'], None],
+    [['concept-mapping', 'learning-models', 'blooms-taxonomy'], None],
+    [['misconception-theory', 'expert-blindness', '2-sigma'], None],
+    [['memory', 'growth-mindset'], None],
+    [['teaching-recursion'], None],
+    [['motivation', 'setting-goals'], None],
+    [['guest-speaker', 'flipped-classroom'], None],
+    [['midterm', 'applying-to-staff'], None],
+    [['group-teaching-exercise'], None],
+    [['group-teaching-techniques', 'gps-syndrome'], None],
+    [['imposter-syndrome', 'stereotype-threat'], None],
+    [['diversity', 'unconscious-bias'], None],
+    [['designing-resources'], None],
+    [['final', 'conclusion'], None],
 ]
 
-META['TUTORING_WEEKS'] = len(CURRICULUM)
+META['TUTORING_WEEKS'] = len(CURRICULUM_WITH_QUIZZES)
 
 if META['SUNDAY_OF_BREAK_WEEK']:
-    CURRICULUM.insert(
+    CURRICULUM_WITH_QUIZZES.insert(
         (META['SUNDAY_OF_BREAK_WEEK'] - META['SUNDAY_OF_FIRST_WEEK']).days // 7,
-        ['break']
+        [['break'], None]
     )
     META['BREAK'] = 'Thanksgiving' if META['TERM'] == 'Fall' else 'Spring'
