@@ -32,7 +32,7 @@
 * Some articles on how people are fighting bias in college and industry:
   * [CS Kickstart at UC Berkeley.](https://cs-kickstart.berkeley.edu)
   * [CS Scholars at UC Berkeley.](https://eecs.berkeley.edu/cs-scholars)
-  * [An article on how Harvey Mudd College is promoting gender equality in computer science.](https://qz.com/192071/how-one-college-went-from-10-female-computer-science-majors-to-40/)
+  * [Harvey Mudd's mission of promoting gender equality in computer science.](https://qz.com/192071/how-one-college-went-from-10-female-computer-science-majors-to-40/)
   * [The webstie for Code 2040.](http://www.code2040.org)
   * [The website for Black Girls Code.](http://www.blackgirlscode.com)
   * [The website for Hack the Hood.](http://www.hackthehood.org)

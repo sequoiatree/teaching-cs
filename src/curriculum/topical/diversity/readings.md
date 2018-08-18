@@ -7,3 +7,7 @@
 
 
 * [An article on promoting diversity in undergraduate computer science education](https://www.kqed.org/mindshift/46839/steps-teachers-can-take-to-keep-girls-and-minorities-in-computer-science-education) and [an associated document developed by Stanford's Cynthia Lee](https://carpentries.github.io/instructor-training/files/papers/lee-create-inclusive-community-2015.pdf).
+
+
+
+* [An article on one family's struggle with sexism in the computer science classroom.](https://www.usenix.org/blog/my-daughters-high-school-programming-teacher)
