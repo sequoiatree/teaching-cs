@@ -1,5 +1,5 @@
-Cesar Plascencia-Zuniga
+Cesar Plascencia Zuniga
 
 cesar.pz@berkeley.edu
 
-placeholder
+Hello! My name is Cesar and I am a sophomore from Santa Barbara, CA. I am incredibly passionate about movies just like millions of other people, but my favorites are _There Will Be Blood_, _Drive_, _Forrest Gump_, and _Fantastic Mr. Fox_. I am a huge advocate of drinking plenty of water and thanking the bus driver. I took CS 370 last semester and absolutely loved helping students with the fundamentals in CS 61A. I was also an academic intern so I helped out with office hours and labs. I came to Berkeley without any real experience in computer science, but when I took CS 61A I found so much encouragement and support from my GSI's and tutors (like Sequoia!) that I knew I wanted to be a part of the community here. Feel free to ask me any questions about anything or simply say hi. I can’t wait to meet y'all.

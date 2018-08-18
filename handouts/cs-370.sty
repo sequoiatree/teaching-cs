@@ -1,0 +1,120 @@
+% META
+
+\def\classcode{CS 370}
+\def\classname{Introduction to Teaching Computer Science}
+\def\term{Fall 2018}
+\def\instructor{Christopher Hunn, Sequoia Eyzaguirre, \& Bryan Tong}
+
+% TEXT AND MARGINS
+
+\textheight = 9in
+\textwidth = 6.5in
+\topmargin = -0.75in
+\oddsidemargin = 0.25in
+\evensidemargin = 0.25in
+\parindent = 0pt
+\parskip = 5pt
+\itemsep = -1pt
+\floatsep 9pt plus 2pt minus 3pt
+\intextsep 9pt plus 2pt minus 3pt
+\textfloatsep=9pt plus 2pt minus 3pt
+\renewcommand{\baselinestretch}{1.0}
+\font\dunhd=cmdunh10 scaled \magstep3
+\font\dunhc=cmdunh10 scaled \magstep2
+\font\dunhb=cmdunh10 scaled \magstep1
+\font\dunha=cmdunh10 scaled \magstep1
+
+% DEFINE HEADER
+
+\def\maketitle{
+    \begingroup
+    \newpage
+    \global\@topnum\z@\@maketitle
+    \thispagestyle{header}
+    \endgroup
+    \let\maketitle\relax
+    \let\@maketitle\relax
+}
+
+\def\@maketitle{
+    \newpage
+    \hrule height 6pt
+    \vskip 0.6em
+    \makebox[1in][l]{\dunhb \classcode}{\dunhb \classname \hfill}
+    \vskip-0.1in
+    \makebox[1in][l]{\dunhb \term}{\dunhb \instructor \hfill \dunhd \title}
+    \vskip 0.6em
+    \hrule height 6pt
+    \vskip 0.15in
+}
+
+\def\section{
+    \@startsection{section}{1}{\z@}{-3.0ex plus -.6ex minus -.2ex}
+                  {1.3ex plus .1ex}{\dunhb}
+}
+
+\def\subsection{
+    \@startsection{subsection}{2}{\z@}{-1.6ex plus -.5ex minus -.1ex}
+                  {0.9ex plus .1ex}{\dunha}
+}
+
+% DEFINE FOOTER
+
+\def\foottext{
+    \begin{footnotesize}
+        \classcode: \term \ \title \hfill \qquad \thepage
+    \end{footnotesize}
+}
+
+% MAKE HEADER & FOOTER
+
+\def\ps@header{
+    \def\@evenhead{}
+    \def\@oddhead{}
+    \def\@evenfoot{\foottext}
+    \def\@oddfoot{\foottext}
+}
+
+\pagestyle{header}
+
+% IMPORT PACKAGES
+
+\usepackage{
+    latexsym,
+    mathptmx,
+    comment,
+    latexsym,
+    epsf,
+    amssymb,
+    graphicx,
+    url,
+    enumerate,
+    pifont,
+}
+
+% MACROS
+
+\def\q#1{{\bf\item#1\\}}
+
+\def\qpts#1#2{{\q{(#1 points)\quad#2}}}
+
+\newenvironment{qparts}{
+    \begin{enumerate}[(a)]
+}{
+    \end{enumerate}
+}
+
+\newcounter{qctr}
+
+\newenvironment{qlist}{
+    \begin{list}{{\bf\arabic{qctr}.}}{\usecounter{qctr}\setlength{\leftmargin}{0pt}}
+}{
+    \end{list}
+}
+
+\def\name{
+    \textbf{Name:}
+    \vskip 0.15in
+    \textbf{Section:}
+    \vskip 0.15in
+}

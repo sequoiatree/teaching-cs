@@ -18,6 +18,13 @@ Lorem ipsum.
 
 [Join the {{ CLASS_CODE }} Slack by visiting this link!]({{ SLACK_INVITE }}) Then read through the sections below.
 
+## Making your account
+
+To edit your information at any time, click your name and then "edit your profile". Please adhere to the following standards:
+
+* [Required] Full name: Your first and last name, with proper capitalization.
+* [Optional] Display name: Your first name or preferred name, if you'd rather not go by your full name.
+
 ## Staying up-to-date
 
 First and foremost, it is your responsibility to stay up-to-date with Slack. That means you should check it often, daily at the least. This is because I will release all time-sensitive announcements via Slack throughout the semester. Some homework assignments will also require you to post on Slack.
@@ -44,6 +51,10 @@ There are a few channels on our Slack. Please respect the purpose of each one.
 ## Etiquette
 
 There is one rule: thread up! When you want to reply to someone, **do not** simply post your followup underneath theirs in the same channel. Rather, hover over their message and click "Reply to thread". (If you're on a phone, just click the message you want to reply to.) Then post your reponse as a reply to theirs. This keeps our Slack organized and easy to navigate for everyone. If you see someone forget to thread up, don't be shy about reminding them. Just be nice about it.
+
+## Personalization
+
+Expression of individuality is welcome! Feel free to add a silly status, upload your own emoji, etc. The only rule is that you are respectful of your peers.
 
 # Exceptions
 

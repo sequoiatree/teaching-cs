@@ -8,7 +8,7 @@
 
 * Some accounts of bias in college and indsutry:
   * [A video about sexism in the UC Berkeley EECS Department.](http://www.dailycal.org/2013/11/15/gender-disparity-eecs-persists/)
-  * [A collection of sexist encounters in the lift of an MIT EECS student](https://medium.com/@alicezielinski/things-people-say-when-youre-a-blonde-engineer-at-mit-b85df3d7970e) and [her thoughtful, insightful followup post](https://medium.com/@alicezielinski/afterword-mit-blonde-engineer-response-67dbd7d5fc2).
+  * [A collection of sexist encounters in the life of an MIT EECS student](https://medium.com/@alicezielinski/things-people-say-when-youre-a-blonde-engineer-at-mit-b85df3d7970e) and [her thoughtful, insightful followup post](https://medium.com/@alicezielinski/afterword-mit-blonde-engineer-response-67dbd7d5fc2).
   * [A collection of sexist encounters collected from the comments of the article on "culture fit" linked below.](http://valleywag.gawker.com/this-is-why-there-arent-enough-women-in-tech-1221929631)
   * [A journey about identity and conformity in industry.](https://medium.com/this-is-hard/the-other-side-of-diversity-1bb3de2f053e)
 
