@@ -1,0 +1,1 @@
+* The midterm is in class this week! See you there.

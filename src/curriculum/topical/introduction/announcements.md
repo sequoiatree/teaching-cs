@@ -1,0 +1,1 @@
+* Welcome to CS 370! There is class this week. Check CalCentral for the time and place.

@@ -1,0 +1,45 @@
+\documentclass[11pt]{article}
+\usepackage{./cs-370}
+
+\def\title{Station 1}
+
+\begin{document}
+
+\maketitle
+
+% Name
+
+\name
+
+% Instructions
+
+At this station, you will design questions that target mechanics and edge cases. Below, you'll find some common edge cases in CS 61A that often go unnoticed until it's too late.
+\begin{itemize}
+    \item \texttt{(define a 3)} versus \texttt{(define (a) 3)}
+    \item Order of evaluation: operator, operands, apply. (Consider using \texttt{global} or \texttt{nonlocal}.)
+    \item Class / instance attributes.
+    \item Negative list indexing!
+    \item Things that copy a list, versus things that mutatie a list. (For example \texttt{A = A + B}.)
+    \item \texttt{\_\_str\_\_} and \texttt{\_\_repr\_\_}.
+    \item The \texttt{lambda}'s parent in \texttt{f(lambda...)}.
+    \item When does a Scheme promise get computed / re-computed?
+    \item Why / when we need a base case.
+    \item Order of recursive calls. (For example \textit{do stuff, recurse, recurse} versus \textit{recurse, do stuff, recurse}.)
+\end{itemize}
+
+% Questions
+
+\begin{qlist}
+
+\q{Task 1}
+For as many of the edge cases above as you can, design a new practice problem. If a student completed your practice problem, they should come away with a clear understanding of how to handle that edge case should they come across it in the future. Remember, quality over quantity! Feel free to move on to other tasks once you have come up with 2 or 3 or problems. Don't feel compelled to work in the same order they're listed above.
+
+\q{Task 2}
+Now write a clear explanation for each problem you came up with. It should explain why the solution is correct, and briefly what the thought process is to get there from scratch.
+
+\q{Task 3}
+Brainstorm 3 different edge cases, not listed above. They can be edge cases that you encountered as a student, or while teaching this semester. Repeat \textbf{Task 1} for the edge cases that you come up with.
+
+\end{qlist}
+
+\end{document}

@@ -14,10 +14,9 @@
 
 <br/>
 
-<p class="title">Announcements</p>
-<hr/>
-
-<br/>
+{% if CURRENT_WK >= 0 %}
+  {{ META_TYPES['announcements'](WEEKS[CURRENT_WK]) }}
+{% endif %}
 
 <p class="title">Calendar</p>
 <hr/>

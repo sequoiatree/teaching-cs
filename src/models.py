@@ -12,7 +12,13 @@ TOPICAL_DIR = 'curriculum/topical'
 WEEKLY_DIR = 'curriculum/weekly'
 PREV_DIR, NEXT_DIR = 'prev', 'next'
 
+META_TYPES = {
+    # These resources do not get displayed on the calendar.
+    'announcements': lambda wk: Markup(read_if_exists(f'{wk.path}/announcements-{wk.number}.html')),
+}
+
 RESOURCE_TYPES = {
+    # These resources get displayed on the calendar.
     'readings': lambda wk: f'Wk. {pad(wk.number, 2)}',
     'homework': lambda wk: f'Due {(wk.date + META["TIME_UNTIL_HOMEWORK_DUE"]).strftime("%b %d")}',
     'tutoring': lambda wk: f'Due {(wk.date + META["TIME_UNTIL_JOURNAL_DUE"]).strftime("%b %d")}',
@@ -21,6 +27,7 @@ RESOURCE_TYPES = {
 RESOURCE_TEMPS = {
     # If a template only draws from one constituent type, they ought to share the same name.
     # Otherwise, the template name ought to be distinct from the name of each constituent type.
+    'announcements': ['announcements'],
     'readings': ['readings'],
     'homework': ['homework'],
     'tutoring': ['assignment', 'journal'],
@@ -108,6 +115,8 @@ class Topic():
 FILES = {'policies'}
 
 WEEKS = [Week(index, topics, quiz) for index, (topics, quiz) in enumerate(CURRICULUM_WITH_QUIZZES)]
+
+CURRENT_WK = get_current_week_index(WEEKS)
 
 STAFF = {snake_case(key): [read_bio(name, join(f'{META["TERM"].lower()}-{META["YEAR"]}', key))
                            for name in val]

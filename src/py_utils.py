@@ -1,3 +1,4 @@
+from datetime import datetime
 from os import mkdir
 
 LOWERCASE_TITLE_WORDS = {'A', 'An', 'The', 'In', 'Of', 'To', 'With', 'And', 'For'}
@@ -16,6 +17,12 @@ def read(file):
     with open(file, 'r') as file:
         content = file.read()
     return content
+
+def read_if_exists(file):
+    try:
+        return read(file)
+    except FileNotFoundError:
+        return ''
 
 def write(file, *args, **kwargs):
     with open(file, 'w') as file:
@@ -41,3 +48,10 @@ def render_list(elements, singular=None, plural=None):
         if word in LOWERCASE_TITLE_WORDS:
             words[i] = word.lower()
     return ' '.join(words)
+
+def get_current_week_index(weeks):
+    assert weeks
+    today, i = datetime.today(), -1
+    while i + 1 < len(weeks) and today >= weeks[i + 1].date:
+        i += 1
+    return i

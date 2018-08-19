@@ -1,0 +1,1 @@
+* Optional one-on-ones with CS 370 staff start this week! If you're interested, [sign up here]({{ ONE_ON_ONE_REQUESTS }}). Please don't schedule a one-on-one just to ask about applying to CSM, course staff, etc. I'll hold a workshop later in the semester to go over all those details.

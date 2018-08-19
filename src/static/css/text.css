@@ -20,3 +20,9 @@ subtitle {
 .footer p, .footer a {
   font-size: 8pt;
 }
+
+.content li {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 12.5pt;
+  line-height: 1.6;
+}
