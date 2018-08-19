@@ -2,4 +2,4 @@ Christopher Hunn
 
 cthunn@eecs.berkeley.edu
 
-placeholder
+Hi! For the past five years — and until recently — I was in charge of the L&S CS major while advising our CS students. I first became officially involved with CS 370 two years ago when I became the official instructor as the new Director of Undergraduate Instruction. Though I've only been a lecturer for a few years, I've held many roles at Cal: undergrad & grad student, GSI, researcher, staff, and lecturer. While I took CS coursework as an undergrad here, my grad work and training has been heavily focused on STEM teaching and educational equity. Prior to working at Cal, I taught AP / IB biology, physiology, and biotech. This led to running a STEM-focused California Partnership Academy. Now I’m excited to improve our undergraduates' educational experience by supporting, teaching, and evaluating our future TA's — such as yourself!
