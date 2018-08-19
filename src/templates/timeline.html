@@ -1,0 +1,245 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{{ include.static_css(('resource',)) }}
+{% endblock %}
+
+{% block title %}{% endblock %}
+
+{% block content %}
+<h1 id="file-id">{{ file.title() }}</h1>
+
+<hr/>
+
+<h1 id="before-semester">Before semester</h1>
+<ul>
+<li>Hire staff.<ul>
+<li>Update <code>src/staff</code> on the CS 370 github.</li>
+<li>Add staff photos under <code>src/static/img</code> on the CS 370 github.</li>
+</ul>
+</li>
+<li>Update <code>src/semester.py</code> on the CS 370 github.<ul>
+<li><code>META</code> requires modification every semester.</li>
+<li><code>CURRICULUM_WITH_QUIZZES</code> requies fresh copies of every quiz every semester.</li>
+</ul>
+</li>
+<li>Set up Slack.<ul>
+<li>Make all the channels listed on the CS 370 policies page. Set a topic for each channel.</li>
+<li>Make the private #staff channel.</li>
+<li>Invite all the staff to the #staff channel.</li>
+<li>Make the initial todo post in the #staff channel.</li>
+</ul>
+</li>
+<li>Admit applicants. Check the CS 370 Google Drive, under "Assets / Applications" for admittance criteria.</li>
+<li>Manually enroll students on CalCentral.</li>
+<li>Add students' preferred names to the tutoring feedback Google Form.</li>
+<li>Review the curriculum.<ul>
+<li>Update this document to reflect any changes.</li>
+</ul>
+</li>
+<li>Publish the new website.</li>
+</ul>
+<h1 id="week-1">Week 1</h1>
+<ul>
+<li>Contact professors for guest lecture on week 7.</li>
+<li>Sunday:<ul>
+<li>Build, freeze, and deploy the website to publish the homework.</li>
+<li>If there are announcements this week, copy and paste them into #general on Slack.</li>
+</ul>
+</li>
+<li>Friday:<ul>
+<li>Build, freeze, and deploy the website to publish the tutoring journals.</li>
+<li>Make the #journal-1 channel on Slack.</li>
+</ul>
+</li>
+</ul>
+<h1 id="week-2">Week 2</h1>
+<ul>
+<li>Contact professors for guest lecture on week 7.</li>
+<li>Sunday:<ul>
+<li>Build, freeze, and deploy the website to publish the homework.</li>
+<li>If there are announcements this week, copy and paste them into #general on Slack.</li>
+</ul>
+</li>
+<li>Friday:<ul>
+<li>Build, freeze, and deploy the website to publish the tutoring journals.</li>
+<li>Make the #journal-2 channel on Slack.</li>
+</ul>
+</li>
+</ul>
+<h1 id="week-3">Week 3</h1>
+<ul>
+<li>Contact professors for guest lecture on week 7.</li>
+<li>Sunday:<ul>
+<li>Build, freeze, and deploy the website to publish the homework.</li>
+<li>If there are announcements this week, copy and paste them into #general on Slack.</li>
+</ul>
+</li>
+<li>Friday:<ul>
+<li>Build, freeze, and deploy the website to publish the tutoring journals.</li>
+<li>Make the #journal-3 channel on Slack.</li>
+</ul>
+</li>
+</ul>
+<h1 id="week-4">Week 4</h1>
+<ul>
+<li>Contact professors for guest lecture on week 7.</li>
+<li>Sunday:<ul>
+<li>Build, freeze, and deploy the website to publish the homework.</li>
+<li>If there are announcements this week, copy and paste them into #general on Slack.</li>
+</ul>
+</li>
+<li>Friday:<ul>
+<li>Build, freeze, and deploy the website to publish the tutoring journals.</li>
+<li>Make the #journal-4 channel on Slack.</li>
+</ul>
+</li>
+</ul>
+<h1 id="week-5">Week 5</h1>
+<ul>
+<li>Contact professors for guest lecture on week 7.</li>
+<li>Sunday:<ul>
+<li>Build, freeze, and deploy the website to publish the homework.</li>
+<li>If there are announcements this week, copy and paste them into #general on Slack.</li>
+</ul>
+</li>
+<li>Friday:<ul>
+<li>Build, freeze, and deploy the website to publish the tutoring journals.</li>
+<li>Make the #journal-5 channel on Slack.</li>
+</ul>
+</li>
+</ul>
+<h1 id="week-6">Week 6</h1>
+<ul>
+<li>Contact professors for guest lecture on week 7.</li>
+<li>Sunday:<ul>
+<li>Add students' preferred names and emails to the first peer shadowing Google Sheet.</li>
+<li>Build, freeze, and deploy the website to publish the homework.</li>
+<li>If there are announcements this week, copy and paste them into #general on Slack.</li>
+</ul>
+</li>
+<li>Friday:<ul>
+<li>Build, freeze, and deploy the website to publish the tutoring journals.</li>
+<li>Make the #journal-6 channel on Slack.</li>
+</ul>
+</li>
+</ul>
+<h1 id="week-7">Week 7</h1>
+<ul>
+<li>Sunday:<ul>
+<li>Build, freeze, and deploy the website to publish the homework.</li>
+<li>If there are announcements this week, copy and paste them into #general on Slack.</li>
+</ul>
+</li>
+<li>Friday:<ul>
+<li>Build, freeze, and deploy the website to publish the tutoring journals.</li>
+<li>Make the #journal-7 channel on Slack.</li>
+</ul>
+</li>
+</ul>
+<h1 id="week-8">Week 8</h1>
+<ul>
+<li>Sunday:<ul>
+<li>Build, freeze, and deploy the website to publish the homework.</li>
+<li>If there are announcements this week, copy and paste them into #general on Slack.</li>
+</ul>
+</li>
+<li>Friday:<ul>
+<li>Build, freeze, and deploy the website to publish the tutoring journals.</li>
+<li>Make the #journal-8 channel on Slack.</li>
+</ul>
+</li>
+</ul>
+<h1 id="week-9">Week 9</h1>
+<ul>
+<li>Sunday:<ul>
+<li>Add students' preferred names and emails to the first peer shadowing Google Sheet.</li>
+<li>Build, freeze, and deploy the website to publish the homework.</li>
+<li>If there are announcements this week, copy and paste them into #general on Slack.</li>
+</ul>
+</li>
+<li>Friday:<ul>
+<li>Build, freeze, and deploy the website to publish the tutoring journals.</li>
+<li>Make the #journal-9 channel on Slack.</li>
+</ul>
+</li>
+</ul>
+<h1 id="week-10">Week 10</h1>
+<ul>
+<li>Advertise the TA shadowing sign-up form to CS 61A, CS 61B, CS 61C, CS 70, and Data 8 staff. It's on week 12.</li>
+<li>Sunday:<ul>
+<li>Build, freeze, and deploy the website to publish the homework.</li>
+<li>If there are announcements this week, copy and paste them into #general on Slack.</li>
+</ul>
+</li>
+<li>Friday:<ul>
+<li>Build, freeze, and deploy the website to publish the tutoring journals.</li>
+<li>Make the #journal-10 channel on Slack.</li>
+</ul>
+</li>
+</ul>
+<h1 id="week-11">Week 11</h1>
+<ul>
+<li>Advertise the TA shadowing sign-up form to CS 61A, CS 61B, CS 61C, CS 70, and Data 8 staff. It's on week 12.</li>
+<li>Sunday:<ul>
+<li>Build, freeze, and deploy the website to publish the homework.</li>
+<li>If there are announcements this week, copy and paste them into #general on Slack.</li>
+</ul>
+</li>
+<li>Friday:<ul>
+<li>Build, freeze, and deploy the website to publish the tutoring journals.</li>
+<li>Make the #journal-11 channel on Slack.</li>
+</ul>
+</li>
+</ul>
+<h1 id="week-12">Week 12</h1>
+<ul>
+<li>Sunday:<ul>
+<li>Build, freeze, and deploy the website to publish the homework.</li>
+<li>If there are announcements this week, copy and paste them into #general on Slack.</li>
+</ul>
+</li>
+<li>Friday:<ul>
+<li>Build, freeze, and deploy the website to publish the tutoring journals.</li>
+<li>Make the #journal-12 channel on Slack.</li>
+</ul>
+</li>
+</ul>
+<h1 id="week-13">Week 13</h1>
+<ul>
+<li>Sunday:<ul>
+<li>Build, freeze, and deploy the website to publish the homework.</li>
+<li>If there are announcements this week, copy and paste them into #general on Slack.</li>
+</ul>
+</li>
+<li>Friday:<ul>
+<li>Build, freeze, and deploy the website to publish the tutoring journals.</li>
+<li>Make the #journal-13 channel on Slack.</li>
+</ul>
+</li>
+</ul>
+<h1 id="week-14">Week 14</h1>
+<ul>
+<li>Enjoy your Thanksgiving break.</li>
+</ul>
+<h1 id="week-15">Week 15</h1>
+<ul>
+<li>Sunday:<ul>
+<li>Build, freeze, and deploy the website to publish the homework.</li>
+<li>If there are announcements this week, copy and paste them into #general on Slack.</li>
+</ul>
+</li>
+<li>
+<p>Friday:</p>
+<ul>
+<li>Build, freeze, and deploy the website to publish the tutoring journals.</li>
+<li>Make the #journal-15 channel on Slack.</li>
+</ul>
+</li>
+<li>
+<p>when to make HW-specific Slack channels: #practicing-socratic, #group-teaching (the poll pinned at the top), #guest-speaker, #memory (for Quora post), #overloaded-terms</p>
+</li>
+<li>when to advertise on piazzas</li>
+</ul>
+
+{% endblock %}

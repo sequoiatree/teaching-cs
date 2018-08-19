@@ -114,7 +114,7 @@ class Topic():
         dir_files = listdir(self.path)
         return {type for type in RESOURCE_FILES if f'{type}.md' in dir_files}
 
-FILES = {'policies'}
+FILES = {'policies', 'timeline'}
 
 WEEKS = [Week(index, topics, quiz) for index, (topics, quiz) in enumerate(CURRICULUM_WITH_QUIZZES)]
 
