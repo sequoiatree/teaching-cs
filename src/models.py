@@ -24,6 +24,8 @@ RESOURCE_TYPES = {
     'tutoring': lambda wk: f'Due {(wk.date + META["TIME_UNTIL_JOURNAL_DUE"]).strftime("%b %d")}',
 }
 
+PERSISTENT_RESOURCE_TYPES = {'readings'}
+
 RESOURCE_TEMPS = {
     # If a template only draws from one constituent type, they ought to share the same name.
     # Otherwise, the template name ought to be distinct from the name of each constituent type.

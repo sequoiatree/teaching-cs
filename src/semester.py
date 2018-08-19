@@ -27,8 +27,6 @@ META = {
     'SLACK_INVITE': 'https://goo.gl/Cq1cma',
     'TUTORING_HOURS_PER_WEEK': 3,
     'TUTORING_HOURS_PER_WEEK_TA': 1,
-    'TIME_UNTIL_HOMEWORK_RELEASED': timedelta(0),
-    'TIME_UNTIL_JOURNAL_RELEASED': timedelta(5),
     'TIME_UNTIL_HOMEWORK_DUE': timedelta(6, 23, 59),
     'TIME_UNTIL_JOURNAL_DUE': timedelta(11, 23, 59),
     'ONE_ON_ONE_REQUESTS': 'https://goo.gl/forms/0dNV32Dnd1zHHNl62',
@@ -37,6 +35,11 @@ META = {
     'TA_SHADOWING': 'https://goo.gl/NHmzMs',
     'FINAL_SURVEY': 'https://goo.gl/forms/TOyNWeMCWsrtghdw2',
     'TUTORING_FEEDBACK': 'https://goo.gl/forms/3wPJsyHZz9Butyw52',
+}
+
+TIME_UNTIL_RELEASED = {
+    'homework': timedelta(0),
+    'tutoring': timedelta(5),
 }
 
 CURRICULUM_WITH_QUIZZES = [
@@ -71,6 +74,7 @@ CURRICULUM_WITH_QUIZZES = [
 ]
 
 META['TUTORING_WEEKS'] = len(CURRICULUM_WITH_QUIZZES)
+META['TODAY'] = datetime.today()
 
 if META['SUNDAY_OF_BREAK_WEEK']:
     CURRICULUM_WITH_QUIZZES.insert(

@@ -1,8 +1,17 @@
 from flask import render_template
 
 from app import app
-from models import CURRENT_WK, FILES, INSTRUCTOR, META_TYPES, RESOURCE_TYPES, STAFF, WEEKS
-from semester import META
+from models import (
+    CURRENT_WK,
+    FILES,
+    INSTRUCTOR,
+    META_TYPES,
+    PERSISTENT_RESOURCE_TYPES,
+    RESOURCE_TYPES,
+    STAFF,
+    WEEKS,
+)
+from semester import META, TIME_UNTIL_RELEASED
 from utils import *
 
 def rename(name):
@@ -20,9 +29,11 @@ def make_template(route, renderer, template_function, *template_args):
 @app.route('/')
 def render_index():
     return render_template('index.html',
+                           TIME_UNTIL_RELEASED=TIME_UNTIL_RELEASED,
                            CURRENT_WK=CURRENT_WK,
                            WEEKS=WEEKS,
                            META_TYPES=META_TYPES,
+                           PERSISTENT_RESOURCE_TYPES=PERSISTENT_RESOURCE_TYPES,
                            RESOURCE_TYPES=RESOURCE_TYPES,
                            INSTRUCTOR=INSTRUCTOR,
                            **META)
