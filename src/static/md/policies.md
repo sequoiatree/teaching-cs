@@ -66,7 +66,8 @@ For exceptions or questions regarding course policy, contact Sequoia via Slack o
 
 * **[30%] Participation and citizenship:** Foremost this accounts for the frequency and quality of your participation during class. A second large factor is your activity on Slack. Lastly, this accounts for your attendance and timeliness submitting assignments.
 * **[15%] Homework:** This accounts for the insightfulness of your responses, which should be relevant to the weekly readings and lecture. You should build off of class material in new ways, using your own experiences to support your claims.
-* **[20%] Tutoring feedback:** This accounts for your demeanor, supportiveness, and knowledge of the course material, as well as how clearly you communicate and whether you provide the right level of guidance.
+* **[15%] Tutoring feedback:** This accounts for your demeanor, supportiveness, and knowledge of the course material, as well as how clearly you communicate and whether you provide the right level of guidance.
 * **[15%] Tutoring journals:** This accounts for the insightfulness of your self-reflection, which should include an evaluation of how you plan to improve, and a clear application of ideas from class. It also accounts for the usefulness of the feedback you provide to your peers.
 * **[10%] Midterm exam:** This accounts for the in-class midterm exam.
 * **[10%] Final exam:** This accounts for the in-class final exam.
+* **[5%] Final project:** This accounts for the final project, which will be released along with the last homework.
