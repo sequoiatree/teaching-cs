@@ -1,0 +1,1 @@
+* The homework is time-sensitive this week! You're going to be shadowing a TA's discussion section. Sign up early to get a class and time slot that you like.

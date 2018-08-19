@@ -1,0 +1,1 @@
+* We have a special guest speaker this week!

@@ -1,0 +1,1 @@
+* The homework is time-sensitive this week! You're going to be shadowing one of your peers' tutoring appointments. Sign up early to get a time slot that you like.
