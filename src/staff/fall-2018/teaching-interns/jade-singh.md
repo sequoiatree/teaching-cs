@@ -2,4 +2,4 @@ Jade Singh
 
 jadesingh17@berkeley.edu
 
-placeholder
+Hi, I’m Jade, a sophomore intending computer science. (Wish me luck in CS 70 this semester!) I’m from Ellicott City, Maryland, born and raised on the East Coast. In addition to CS, I love swimming, _Game of Thrones_, food, and music, which I’m also minoring in. I really got into teaching last spring, when I took CS 370 in hopes of learning how to become a better teacher and pursue my goal of TA-ing for CS 61A. CS 370 is one of the best experiences I've had so far at Berkeley because it taught me a lot about teaching, and helped me find a community of people as passionate about teaching and helping others as I am. CS 370 gave me experience tutoring a variety of students of all skill levels and I learned so much from it. I'm so excited to work with all of you this semester, and welcome you into the Berkeley CS teaching community!
