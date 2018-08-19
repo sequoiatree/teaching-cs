@@ -19,11 +19,11 @@ In this class you will keep your homework assignments in a Google Drive folder, 
 * [cthunn@eecs.berkeley.edu](mailto:cthunn@eecs.berkeley.edu)
 * [sequoia@berkeley.edu](mailto:sequoia@berkeley.edu)
 * [btong@berkeley.edu](mailto:btong@berkeley.edu)
-* asliakalin@berkeley.edu
-* cesar.pz@berkeley.edu
-* griffinprechter@berkeley.edu
-* jadesingh17@berkeley.edu
-* jessxlee@berkeley.edu
-* rinaq@berkeley.edu
+* [asliakalin@berkeley.edu](mailto:asliakalin@berkeley.edu)
+* [cesar.pz@berkeley.edu](mailto:cesar.pz@berkeley.edu)
+* [griffinprechter@berkeley.edu](mailto:griffinprechter@berkeley.edu)
+* [jadesingh17@berkeley.edu](mailto:jadesingh17@berkeley.edu)
+* [jessxlee@berkeley.edu](mailto:jessxlee@berkeley.edu)
+* [rinaq@berkeley.edu](mailto:rinaq@berkeley.edu)
 
 Please grant us access to the whole folder at once, rather than granting us access to each assignment individually. Also, keep in mind that each week's homework assignment should correspond to one Google Doc within your homework folder. For example, you should write your responses to the following questions in a single Google Doc called "HW {{ week.number }}".
