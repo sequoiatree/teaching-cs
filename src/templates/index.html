@@ -36,7 +36,7 @@
         <td>{{ week.title }}</td>
         {% for type in RESOURCE_TYPES %}
           <td>
-            {% if week.resources[type] and (type in PERSISTENT_RESOURCE_TYPES or week.date + TIME_UNTIL_RELEASED[type] <= TODAY) %}
+            {% if week.resources[type] and RESOURCES_TO_RENDER[week][type] %}
               <a href="{{ url_for(week.resources[type]) }}">
                 {{ RESOURCE_TYPES[type](week) }}
               </a>

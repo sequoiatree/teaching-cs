@@ -1,10 +1,10 @@
-from datetime import timedelta
+from datetime import datetime, timedelta
 from os import listdir, makedirs
 from os.path import join
 
 from flask import Markup
 
-from semester import META, CURRICULUM_WITH_QUIZZES
+from semester import META, CURRICULUM_WITH_QUIZZES, TIME_UNTIL_RELEASED
 from utils import *
 
 MD_FILE_DIR = 'static/md'
@@ -114,11 +114,19 @@ class Topic():
         dir_files = listdir(self.path)
         return {type for type in RESOURCE_FILES if f'{type}.md' in dir_files}
 
+def gets_rendered(week, type):
+    TODAY = datetime.today()
+    return type in PERSISTENT_RESOURCE_TYPES or week.date + TIME_UNTIL_RELEASED[type] <= TODAY
+
 FILES = {'policies', 'timeline'}
 
 WEEKS = [Week(index, topics, quiz) for index, (topics, quiz) in enumerate(CURRICULUM_WITH_QUIZZES)]
 
 CURRENT_WK = get_current_week_index(WEEKS)
+
+RESOURCES_TO_RENDER = {
+    week: {type: gets_rendered(week, type) for type in RESOURCE_TYPES} for week in WEEKS
+}
 
 STAFF = {snake_case(key): [read_bio(name, join(f'{META["TERM"].lower()}-{META["YEAR"]}', key))
                            for name in val]

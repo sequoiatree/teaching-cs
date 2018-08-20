@@ -6,8 +6,8 @@ from models import (
     FILES,
     INSTRUCTOR,
     META_TYPES,
-    PERSISTENT_RESOURCE_TYPES,
     RESOURCE_TYPES,
+    RESOURCES_TO_RENDER,
     STAFF,
     WEEKS,
 )
@@ -33,8 +33,8 @@ def render_index():
                            CURRENT_WK=CURRENT_WK,
                            WEEKS=WEEKS,
                            META_TYPES=META_TYPES,
-                           PERSISTENT_RESOURCE_TYPES=PERSISTENT_RESOURCE_TYPES,
                            RESOURCE_TYPES=RESOURCE_TYPES,
+                           RESOURCES_TO_RENDER=RESOURCES_TO_RENDER,
                            INSTRUCTOR=INSTRUCTOR,
                            **META)
 
@@ -44,11 +44,12 @@ def render_staff():
 
 for week in WEEKS:
     for type in RESOURCE_TYPES:
-        make_template(
-            week.route(type), week.renderer(type),
-            lambda week, type: render_template(week.template(type), week=week, type=type, **META),
-            week, type
-        )
+        if RESOURCES_TO_RENDER[week][type]:
+            make_template(
+                week.route(type), week.renderer(type),
+                lambda week, type: render_template(week.template(type), week=week, type=type, **META),
+                week, type
+            )
 
 for file in FILES:
     make_template(
