@@ -7,6 +7,8 @@ from flask import Markup
 from semester import META, CURRICULUM_WITH_QUIZZES, TIME_UNTIL_RELEASED
 from utils import *
 
+RENDER_ALL_RESOURCES = False # For debugging.
+
 MD_FILE_DIR = 'static/md'
 TOPICAL_DIR = 'curriculum/topical'
 WEEKLY_DIR = 'curriculum/weekly'
@@ -35,6 +37,11 @@ RESOURCE_TEMPS = {
     'tutoring': ['assignment', 'journal'],
 }
 
+RESOURCE_OFFSETS = {
+    # Weekly offsets for the resources in RESOURCE_TEMPS.
+    'tutoring': 1,
+}
+
 RESOURCE_FILES = sum(RESOURCE_TEMPS.values(), [])
 
 class Week():
@@ -50,21 +57,25 @@ class Week():
         self.title = render_list([topic.title for topic in self.topics])
         self.files = {type: [] for type in RESOURCE_FILES}
 
-    def load_files(self, type):
+    def load_files(self, type, offset):
         filename = f'{type}.md'
-        load_file = lambda week, path: week.files[type].append(join(path, filename))
+        def load_file(i, path, use_offset=True):
+            index = i + (offset if use_offset else 0)
+            if WEEKS[index].date == META['SUNDAY_OF_BREAK_WEEK']:
+                index += 1
+            return WEEKS[index].files[type].append(join(path, filename))
         weekly_path = join(WEEKLY_DIR, self.directory)
         if self.directory in listdir(WEEKLY_DIR) and filename in listdir(weekly_path):
-            load_file(self, weekly_path)
+            load_file(self.index, weekly_path, False)
         for topic in self.topics:
             prev_path, next_path = join(topic.path, PREV_DIR), join(topic.path, NEXT_DIR)
             topic_files = listdir(topic.path)
             if type in topic.resources:
-                load_file(self, topic.path)
+                load_file(self.index, topic.path)
             if PREV_DIR in topic_files and filename in listdir(prev_path):
-                load_file(WEEKS[self.index - 1], prev_path)
+                load_file(self.index - 1, prev_path)
             if NEXT_DIR in topic_files and filename in listdir(next_path):
-                load_file(WEEKS[self.index + 1], next_path)
+                load_file(self.index + 1, next_path)
 
     def load_resources(self):
         self.resources = {template: self.load_resource(template) for template in RESOURCE_TEMPS}
@@ -115,8 +126,11 @@ class Topic():
         return {type for type in RESOURCE_FILES if f'{type}.md' in dir_files}
 
 def gets_rendered(week, type):
-    TODAY = datetime.today()
-    return type in PERSISTENT_RESOURCE_TYPES or week.date + TIME_UNTIL_RELEASED[type] <= TODAY
+    if RENDER_ALL_RESOURCES:
+        return True
+    else:
+        TODAY = datetime.today()
+        return type in PERSISTENT_RESOURCE_TYPES or week.date + TIME_UNTIL_RELEASED[type] <= TODAY
 
 FILES = {'policies', 'timeline'}
 
@@ -140,8 +154,9 @@ for file in FILES:
     make_html('file', f'templates/{file}.html', read(join(MD_FILE_DIR, f'{file}.md')))
 
 for week in WEEKS:
-    for type in RESOURCE_FILES:
-        week.load_files(type)
+    for type in RESOURCE_TEMPS:
+        for template in RESOURCE_TEMPS[type]:
+            week.load_files(template, RESOURCE_OFFSETS[type] if type in RESOURCE_OFFSETS else 0)
 
 for week in WEEKS:
     week.load_resources()

@@ -28,7 +28,7 @@ META = {
     'TUTORING_HOURS_PER_WEEK': 3,
     'TUTORING_HOURS_PER_WEEK_TA': 1,
     'TIME_UNTIL_HOMEWORK_DUE': timedelta(6, 23, 59),
-    'TIME_UNTIL_JOURNAL_DUE': timedelta(11, 23, 59),
+    'TIME_UNTIL_JOURNAL_DUE': timedelta(6, 23, 59),
     'ONE_ON_ONE_REQUESTS': 'https://goo.gl/forms/0dNV32Dnd1zHHNl62',
     'PEER_SHADOWING_1': 'https://goo.gl/mUeqPV',
     'PEER_SHADOWING_2': 'https://goo.gl/3AjieE',
@@ -38,8 +38,9 @@ META = {
 }
 
 TIME_UNTIL_RELEASED = {
-    'homework': timedelta(0),
-    'tutoring': timedelta(5),
+    # Relative to the start of the week on Sunday at 12:00 AM.
+    'homework': timedelta(-1),
+    'tutoring': timedelta(-1),
 }
 
 CURRICULUM_WITH_QUIZZES = [
