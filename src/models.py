@@ -7,7 +7,7 @@ from flask import Markup
 from semester import META, CURRICULUM_WITH_QUIZZES, TIME_UNTIL_RELEASED
 from utils import *
 
-RENDER_ALL_RESOURCES = True # For debugging.
+RENDER_ALL_RESOURCES = False # For debugging.
 
 MD_FILE_DIR = 'static/md'
 TOPICAL_DIR = 'curriculum/topical'
