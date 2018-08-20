@@ -14,9 +14,9 @@
 * Admit applicants. Check the CS 370 Google Drive, under "Assets / Applications" for admittance criteria.
 * Manually enroll students on CalCentral.
 * Update the Google Drive assets:
-  * Make a new feedback form.
+  * Make a new feedback Google Form.
   * Add students' preferred names to the tutoring feedback Google Form.
-  * Make new tutoring request forms and tuturoing sign-up spreadsheets.
+  * Make new tutoring request forms and tutoring sign-up spreadsheets.
   * Update the feedback link on the tutoring request forms.
   * Update the feedback link on the tutoring advertisements for Piazza.
 * Review the curriculum.
