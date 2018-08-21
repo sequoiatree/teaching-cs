@@ -25,6 +25,7 @@ META = {
     'SCHEDULER': 'http://cs370scheduler.org',
     'SLACK': 'https://cs370fall2018.slack.com/',
     'SLACK_INVITE': 'https://goo.gl/Cq1cma',
+    'BCOURSES': 'https://bcourses.berkeley.edu/courses/1471830',
     'TUTORING_HOURS_PER_WEEK': 3,
     'TUTORING_HOURS_PER_WEEK_TA': 1,
     'TIME_UNTIL_HOMEWORK_DUE': timedelta(6, 23, 59),
@@ -35,6 +36,7 @@ META = {
     'TA_SHADOWING': 'https://goo.gl/NHmzMs',
     'FINAL_SURVEY': 'https://goo.gl/forms/TOyNWeMCWsrtghdw2',
     'TUTORING_FEEDBACK': 'https://goo.gl/forms/3wPJsyHZz9Butyw52',
+    'WEEKS_OF_TUTORING': 13,
 }
 
 TIME_UNTIL_RELEASED = {

@@ -4,18 +4,6 @@ Welcome to {{ CLASS_CODE }}! This course is designed to help aspiring teachers h
 
 {{ CLASS_CODE }} is divided into three parts. First, we will talk about how students learn and how to interact with them in a one-on-one setting. This is applicable not only to lab assistants and tutors, but also TA's, since it is one-on-one interaction is a critical component of all teaching. Second we will cover group teaching, which is important to master in order to become a successful tutor or TA. Last of all we will discuss current issues in CS pedagogy, including underrepresentation, stigmas associated with computer science, the issue of prior experience, and how these factors influence student learning.
 
-# Weekly duties
-
-In this class you will have a few responsibilities every week.
-
-## Readings and homework
-
-Readings and homework are available on the main page. Complete each assignment by its indicated due date.
-
-## Tutoring
-
-Lorem ipsum.
-
 # Slack
 
 [Join the {{ CLASS_CODE }} Slack by visiting this link!]({{ SLACK_INVITE }}) Then read through the sections below.
@@ -58,6 +46,47 @@ There is one rule: thread up! When you want to reply to someone, **do not** simp
 
 Expression of individuality is welcome! Feel free to add a silly status, upload your own emoji, etc. The only rule is that you are respectful of your peers.
 
+# bCourses
+
+Visit [the official CS 370 bCourses]({{ BCOURSES }}) to get set up. If you don't have access, contact Sequoia via Slack or email (sequoia@berkeley.edu) immediately.
+
+It is your responsibility to stay up-to-date with bCourses and submit all your assignments on time.
+
+# Weekly duties
+
+In this class you will have a few responsibilities every week.
+
+## Readings
+
+All the readings are available on the main page. Each week, read at least one of the assigned readings and write about it in the #readings channel on Slack. This factors into your participation grade.
+
+## Homework
+
+Homework is released weekly on the main page. You will submit it on bCourses.
+
+## Tutoring
+
+This is arguably your most important commitment for CS 370. Your requirement is as follows:
+
+* If you are a TA, then you need to have {{ WEEKS_OF_TUTORING * TUTORING_HOURS_PER_WEEK_TA }} hours of CSM / tutoring by the end of the semester. This translates to about {{ TUTORING_HOURS_PER_WEEK_TA }} hours of CSM / tutoring per week.
+* If you are not a TA, then you need to have {{ WEEKS_OF_TUTORING * TUTORING_HOURS_PER_WEEK }} hours of CSM / tutoring by the end of the semester. This translates to about {{ TUTORING_HOURS_PER_WEEK }} hours of CSM / tutoring per week.
+
+There are two activities that count toward your CS 370 teaching requirement:
+
+* First of all, there's  teaching CSM. Note that we calculate your CSM hours based off your official CSM job description. (For example, if your official CSM job description says you teach CSM 1 hour per week, for 10 weeks, then this contributes 10 hours in total toward your CS 370 teaching requirement.)
+* Second, there's tutoring offered via CS 370 itself. Every week I will publish a new tutoring assignment on the main page. At the top I will link a spreadsheet full of people who want tutoring. You can contact anyone on the spreadsheet, who is available at a time convenient for you. After the appointment, be sure your student fills out the tutoring feedback form. **If they don't, then you may not get credit for teaching them.**
+
+Regardless of whether you fulfill your requirement with CSM, CS 370 tutoring, or a mixture of the two, you must also keep a tutoring journal. Any time you spend teaching discussion, group tutoring, or one-on-one tutoring during the semester, you must catalogue it with a journal entry. New journal prompts are released weekly on the main page. You will submit your journal entries on bCourses, and then respond to at least two of your peers' responses too.
+
+Some miscellaneous logistics:
+
+* You are welcome and encouraged to surpass your CS 370 tutoring requirement. You'll become a better teacher, your students will appreciate it a lot, and it's a pretty solid way to get a recommendation from CS 370 staff when hiring rolls around.
+* Your appointments can be whatever length you want, but keep in mind that your students will tire quickly if you're teaching properly. I recommend appointments 1 hour or 1.5 hours in length.
+* You can only help students conceptually, and never with an assignment unless the assignment in question is already due.
+* Cancelled appointments and no-show appointments do not count toward your teaching requirement. In either event, you must contact someone else.
+
+If you have any questions about the CS 370 teaching requirement, ask them in the #tutoring channel on Slack.
+
 # Exceptions
 
 For exceptions or questions regarding course policy, contact Sequoia via Slack or email (sequoia@berkeley.edu).
@@ -66,7 +95,7 @@ For exceptions or questions regarding course policy, contact Sequoia via Slack o
 
 {{ CLASS_CODE }} is letter-graded. It is not curved and we will not release the grading bins. The rubric is as follows:
 
-* **[30%] Participation and citizenship:** Foremost this accounts for the frequency and quality of your participation during class. A second large factor is your activity on Slack. Lastly, this accounts for your attendance and timeliness submitting assignments.
+* **[30%] Participation and citizenship:** Foremost this accounts for the frequency and quality of your participation during class. A second large factor is your activity on Slack. Lastly, this accounts for your attendance and timeliness submitting assignments. **Participation is not graded lightly, as it is in most other classes.**
 * **[30%] Homework and tutoring journals:** Your homework grade accounts for the insightfulness of your responses, which should be relevant to the weekly readings and lecture. You should build off of class material in new ways, using your own experiences to support your claims. Your tutoring journals grade accounts for the insightfulness of your self-reflection, which should include an evaluation of how you plan to improve, and a clear application of ideas from class. It also accounts for the usefulness of the feedback you provide to your peers.
 * **[15%] Tutoring feedback:** This accounts for your demeanor, supportiveness, and knowledge of the course material, as well as how clearly you communicate and whether you provide the right level of guidance.
 * **[10%] Midterm exam:** This accounts for the in-class midterm exam.
