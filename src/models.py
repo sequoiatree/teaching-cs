@@ -4,7 +4,7 @@ from os.path import join
 
 from flask import Markup
 
-from semester import META, CURRICULUM_WITH_QUIZZES, TIME_UNTIL_RELEASED
+from semester import META, CURRICULUM_WITH_SIGNUPS, TIME_UNTIL_RELEASED
 from utils import *
 
 RENDER_ALL_RESOURCES = False # For debugging.
@@ -46,14 +46,14 @@ RESOURCE_FILES = sum(RESOURCE_TEMPS.values(), [])
 
 class Week():
 
-    def __init__(self, index, topics, quiz):
+    def __init__(self, index, topics, signup):
         self.index = index
         self.number = self.index + 1
         self.directory = f'week-{pad(self.number, 2)}'
         self.path = f'composite-resources/{self.directory}'
         self.date = (META['SUNDAY_OF_FIRST_WEEK'] + timedelta(7) * self.index)
         self.topics = [Topic(topic) for topic in topics]
-        self.quiz = quiz
+        self.signup = signup
         self.title = render_list([topic.title for topic in self.topics])
         self.files = {type: [] for type in RESOURCE_FILES}
 
@@ -134,7 +134,7 @@ def gets_rendered(week, type):
 
 FILES = {'policies', 'timeline'}
 
-WEEKS = [Week(index, topics, quiz) for index, (topics, quiz) in enumerate(CURRICULUM_WITH_QUIZZES)]
+WEEKS = [Week(index, topics, quiz) for index, (topics, quiz) in enumerate(CURRICULUM_WITH_SIGNUPS)]
 
 CURRENT_WK = get_current_week_index(WEEKS)
 

@@ -6,6 +6,10 @@
   By the end of this tutoring cycle, you should have completed about {{ TUTORING_HOURS_PER_WEEK_TA * week.index if SUNDAY_OF_BREAK_WEEK and week.date < SUNDAY_OF_BREAK_WEEK else TUTORING_HOURS_PER_WEEK_TA * (week.index - 1) }} hours of tutoring / CSM if you're a TA, or about {{ TUTORING_HOURS_PER_WEEK * week.index if SUNDAY_OF_BREAK_WEEK and week.date < SUNDAY_OF_BREAK_WEEK else TUTORING_HOURS_PER_WEEK * (week.index - 1) }} hours of tutoring / CSM if you're not a TA.
 </p>
 
+<p>
+  Here's the tutoring sign-up form for this week: <a href="{{ week.signup }}">{{ week.signup }}</a>.
+</p>
+
 
 
 <h1 id="journal-prompt">Journal prompt</h1>

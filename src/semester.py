@@ -43,41 +43,41 @@ TIME_UNTIL_RELEASED = {
     'tutoring': timedelta(-1),
 }
 
-CURRICULUM_WITH_QUIZZES = [
+CURRICULUM_WITH_SIGNUPS = [
     [['introduction', 'socratic-method'],
-     'https://goo.gl/forms/rcMStCnvcQGdurtF3'],
+     None],
     [['concept-mapping', 'learning-models', 'blooms-taxonomy'],
-     None],
+     'https://goo.gl/dkZahs'],
     [['misconception-theory', 'expert-blindness', '2-sigma'],
-     None],
+     'https://goo.gl/eYx2cW'],
     [['memory', 'growth-mindset'],
-     None],
+     'https://goo.gl/ooPZgp'],
     [['teaching-recursion'],
-     None],
+     'https://goo.gl/Z3obtd'],
     [['motivation', 'setting-goals'],
-     None],
+     'https://goo.gl/UCG2dd'],
     [['guest-speaker', 'flipped-classroom'],
-     None],
+     'https://goo.gl/FXzCqf'],
     [['midterm', 'applying-to-staff'],
-     None],
+     'https://goo.gl/bD5gS6'],
     [['group-teaching-exercise'],
-     None],
+     'https://goo.gl/4A5jU8'],
     [['group-teaching-techniques', 'gps-syndrome'],
-     None],
+     'https://goo.gl/ng5ABy'],
     [['imposter-syndrome', 'stereotype-threat'],
-     None],
+     'https://goo.gl/YwutRP'],
     [['diversity', 'unconscious-bias'],
-     None],
+     'https://goo.gl/zA9VHh'],
     [['designing-resources'],
-     None],
+     'https://goo.gl/ftfYWg'],
     [['final', 'conclusion'],
-     None],
+     'https://goo.gl/U24B4H'],
 ]
 
-META['TUTORING_WEEKS'] = len(CURRICULUM_WITH_QUIZZES)
+META['TUTORING_WEEKS'] = len(CURRICULUM_WITH_SIGNUPS)
 
 if META['SUNDAY_OF_BREAK_WEEK']:
-    CURRICULUM_WITH_QUIZZES.insert(
+    CURRICULUM_WITH_SIGNUPS.insert(
         (META['SUNDAY_OF_BREAK_WEEK'] - META['SUNDAY_OF_FIRST_WEEK']).days // 7,
         [['break'], None]
     )
