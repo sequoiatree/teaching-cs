@@ -58,7 +58,7 @@ In this class you will have a few responsibilities every week.
 
 ## Readings
 
-All the readings are available on the main page. Each week, read at least one of the assigned readings and write about it in the #readings channel on Slack. This factors into your participation grade.
+All the readings are available on the main page. Each week, read at least one of the assigned readings and write about it in the appropriate channel (#readings-1, #readings-2, etc.) on Slack. This factors into your participation grade.
 
 ## Homework
 
