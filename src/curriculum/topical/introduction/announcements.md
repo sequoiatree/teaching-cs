@@ -1,3 +1,3 @@
 * Welcome to CS 370! There is class this week. Check CalCentral for the time and place.
-* Join Slack and bCourses pronto. See the [policies page]({{ url_for('render_policies') }}) for detailed instructions.
-* Stay on top of your weekly duties! To summarize the [policies page]({{ url_for('render_policies') }}), you'll do some reading and then write about it on Slack every week. You'll also submit homework (and starting next week, tutoring journals) on bCourses.
+* Join Slack and bCourses pronto. For detailed instructions, see the policies page linked on the navbar above.
+* Stay on top of your weekly duties! To summarize the policies page, you'll do some reading and then write about it on Slack every week. You'll also submit homework (and starting next week, tutoring journals) on bCourses.

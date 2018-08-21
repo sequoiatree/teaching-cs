@@ -33,8 +33,8 @@ There are a few channels on our Slack. Please respect the purpose of each one.
 * **#random:** Write anything you want in this channel. Whether you want to share a funny video, schedule an impromptu dinner, or just chat with your peers, feel free and welcome! The only requirement is that you are respectful of your peers.
 * **#homework:** Use this channel for questions, comments, or concerns about the homework. You can also bounce ideas off one another in this channel if you want to share or collaboratively develop ideas relevant to the homework. (Oh, and your activity this channel counts for participation credit!)
 * **#tutoring:** Use this channel for questions, comments, or concerns about tutoring and tutoring journals. Want to share advice, or ask for input? Want to know how others approached teaching a certain topic? Or how folks are structuring their midterm-prep sessions? That's what this channel is here for.
-* **#readings:** Use this channel for questions, comments, or concerns about the readings. You can also discuss your relevant ideas here.
 * **#pedagogy:** Questions about teaching in general? Post here to ask advice from myself and your peers.
+* **#readings-n:** Every week I'll make a new channel called something like #readings-1, #readings-2, etc. This is where you'll discuss the weekly readings.
 * **#meetup:** If you join this channel, you will be paired up with someone else in {{ CLASS_CODE }} every week. This is your opportunity to get to know them better! Go out for boba, or maybe chat at lunch. You might find them to be a friend, study partner, or insightful co-teacher.
 * **And more:** Everyone is welcome to start their own channels on Slack! Want to put together a CS 61B study group? Go ahead! Want to talk fun facts about Oregon? That's cool. Want to meet up for extracurriculars like dance? Or brainstorm a new logo for {{ CLASS_CODE }}? Go right ahead.
 

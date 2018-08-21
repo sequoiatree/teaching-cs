@@ -32,7 +32,7 @@ After you're all set up, you can make changes to your local clone of the reposit
 
 ### Transitioning between semesters
 
-Semester metadata is catalogued in `src/semester.py`. In particular you need to update the dictionary `META` to enable automatic content generation. Should you want to, you can also change `TIME_UNTIL_RELEASED` to modify assignment release dates. Finally, to change the point at which we'll cover topics in the class, you should alter `CURRICULUM_WITH_QUIZZES`. Speaking of which, the quiz links should also be refreshed on a per-semester basis.
+Semester metadata is catalogued in `src/semester.py`. In particular you need to update the dictionary `META` to enable automatic content generation. Should you want to, you can also change `TIME_UNTIL_RELEASED` to modify assignment release dates. Finally, to change the point at which we'll cover topics in the class, you should alter `CURRICULUM_WITH_SIGNUPS`. Speaking of which, the sign-up links should also be refreshed on a per-semester basis.
 
 ### Updating static files
 

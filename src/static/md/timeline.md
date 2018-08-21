@@ -5,7 +5,7 @@
   * Add staff photos under `src/static/img` on the CS 370 github.
 * Update `src/semester.py` on the CS 370 github.
   * `META` requires modification every semester.
-  * `CURRICULUM_WITH_QUIZZES` requies fresh copies of every quiz every semester.
+  * `CURRICULUM_WITH_SIGNUPS` requies fresh copies of every sign-ups every semester.
 * Set up Slack.
   * Make all the channels listed on the CS 370 policies page. Set a topic for each channel.
   * Make the private #staff channel.
@@ -29,10 +29,12 @@
 * Sunday:
   * If there are announcements this week, copy and paste them into #general on Slack.
 * Wednesday:
+  * Advertise CS 370 tutoring sign-ups to priority students.
+* Thursday:
   * Advertise CS 370 tutoring sign-ups on Piazza for CS 61A, CS 61B, CS 61C, CS 70, and Data 8.
 * Saturday:
   * Build, freeze, and deploy the website.
-  * Make the #journal-2 channel on Slack.
+  * Make the #readings-2 channel on Slack.
   * Make the #practicing-socratic channel on Slack.
 
 # Week 2
@@ -42,10 +44,12 @@
 * Sunday:
   * If there are announcements this week, copy and paste them into #general on Slack.
 * Wednesday:
+  * Advertise CS 370 tutoring sign-ups to priority students.
+* Thursday:
   * Advertise CS 370 tutoring sign-ups on Piazza for CS 61A, CS 61B, CS 61C, CS 70, and Data 8.
 * Saturday:
   * Build, freeze, and deploy the website.
-  * Make the #journal-3 channel on Slack.
+  * Make the #readings-3 channel on Slack.
   * Make the #overloaded-terms channel on Slack.
 
 # Week 3
@@ -55,10 +59,12 @@
 * Sunday:
   * If there are announcements this week, copy and paste them into #general on Slack.
 * Wednesday:
+  * Advertise CS 370 tutoring sign-ups to priority students.
+* Thursday:
   * Advertise CS 370 tutoring sign-ups on Piazza for CS 61A, CS 61B, CS 61C, CS 70, and Data 8.
 * Saturday:
   * Build, freeze, and deploy the website.
-  * Make the #journal-4 channel on Slack.
+  * Make the #readings-4 channel on Slack.
 
 # Week 4
 
@@ -67,10 +73,12 @@
 * Sunday:
   * If there are announcements this week, copy and paste them into #general on Slack.
 * Wednesday:
+  * Advertise CS 370 tutoring sign-ups to priority students.
+* Thursday:
   * Advertise CS 370 tutoring sign-ups on Piazza for CS 61A, CS 61B, CS 61C, CS 70, and Data 8.
 * Saturday:
   * Build, freeze, and deploy the website.
-  * Make the #journal-5 channel on Slack.
+  * Make the #readings-5 channel on Slack.
   * Make the #memory channel on Slack.
 
 # Week 5
@@ -80,11 +88,13 @@
 * Sunday:
   * If there are announcements this week, copy and paste them into #general on Slack.
 * Wednesday:
+  * Advertise CS 370 tutoring sign-ups to priority students.
+* Thursday:
   * Advertise CS 370 tutoring sign-ups on Piazza for CS 61A, CS 61B, CS 61C, CS 70, and Data 8.
 * Saturday:
   * Build, freeze, and deploy the website.
   * Add students' preferred names and emails to the first peer shadowing Google Sheet.
-  * Make the #journal-6 channel on Slack.
+  * Make the #readings-6 channel on Slack.
   * Make the #guest-speaker channel on Slack.
 
 # Week 6
@@ -94,10 +104,12 @@
 * Sunday:
   * If there are announcements this week, copy and paste them into #general on Slack.
 * Wednesday:
+  * Advertise CS 370 tutoring sign-ups to priority students.
+* Thursday:
   * Advertise CS 370 tutoring sign-ups on Piazza for CS 61A, CS 61B, CS 61C, CS 70, and Data 8.
 * Saturday:
   * Build, freeze, and deploy the website.
-  * Make the #journal-7 channel on Slack.
+  * Make the #readings-7 channel on Slack.
 
 # Week 7
 
@@ -106,31 +118,36 @@
 * Sunday:
   * If there are announcements this week, copy and paste them into #general on Slack.
 * Wednesday:
+  * Advertise CS 370 tutoring sign-ups to priority students.
+* Thursday:
   * Advertise CS 370 tutoring sign-ups on Piazza for CS 61A, CS 61B, CS 61C, CS 70, and Data 8.
 * Saturday:
   * Build, freeze, and deploy the website.
-  * Make the #journal-8 channel on Slack.
 
 # Week 8
 
 * Sunday:
   * If there are announcements this week, copy and paste them into #general on Slack.
 * Wednesday:
+  * Advertise CS 370 tutoring sign-ups to priority students.
+* Thursday:
   * Advertise CS 370 tutoring sign-ups on Piazza for CS 61A, CS 61B, CS 61C, CS 70, and Data 8.
 * Saturday:
   * Build, freeze, and deploy the website.
   * Add students' preferred names and emails to the first peer shadowing Google Sheet.
-  * Make the #journal-9 channel on Slack.
+  * Make the #readings-9 channel on Slack.
 
 # Week 9
 
 * Sunday:
   * If there are announcements this week, copy and paste them into #general on Slack.
 * Wednesday:
+  * Advertise CS 370 tutoring sign-ups to priority students.
+* Thursday:
   * Advertise CS 370 tutoring sign-ups on Piazza for CS 61A, CS 61B, CS 61C, CS 70, and Data 8.
 * Saturday:
   * Build, freeze, and deploy the website.
-  * Make the #journal-10 channel on Slack.
+  * Make the #readings-10 channel on Slack.
   * Make the #group-teaching channel on Slack. Pin the 4-option poll to the top.
 
 # Week 10
@@ -139,10 +156,12 @@
 * Sunday:
   * If there are announcements this week, copy and paste them into #general on Slack.
 * Wednesday:
+  * Advertise CS 370 tutoring sign-ups to priority students.
+* Thursday:
   * Advertise CS 370 tutoring sign-ups on Piazza for CS 61A, CS 61B, CS 61C, CS 70, and Data 8.
 * Saturday:
   * Build, freeze, and deploy the website.
-  * Make the #journal-11 channel on Slack.
+  * Make the #readings-11 channel on Slack.
 
 # Week 11
 
@@ -150,30 +169,35 @@
 * Sunday:
   * If there are announcements this week, copy and paste them into #general on Slack.
 * Wednesday:
+  * Advertise CS 370 tutoring sign-ups to priority students.
+* Thursday:
   * Advertise CS 370 tutoring sign-ups on Piazza for CS 61A, CS 61B, CS 61C, CS 70, and Data 8.
 * Saturday:
   * Build, freeze, and deploy the website.
-  * Make the #journal-12 channel on Slack.
+  * Make the #readings-12 channel on Slack.
 
 # Week 12
 
 * Sunday:
   * If there are announcements this week, copy and paste them into #general on Slack.
 * Wednesday:
+  * Advertise CS 370 tutoring sign-ups to priority students.
+* Thursday:
   * Advertise CS 370 tutoring sign-ups on Piazza for CS 61A, CS 61B, CS 61C, CS 70, and Data 8.
 * Saturday:
   * Build, freeze, and deploy the website.
-  * Make the #journal-13 channel on Slack.
 
 # Week 13
 
 * Sunday:
   * If there are announcements this week, copy and paste them into #general on Slack.
 * Wednesday:
+  * Advertise CS 370 tutoring sign-ups to priority students.
+* Thursday:
   * Advertise CS 370 tutoring sign-ups on Piazza for CS 61A, CS 61B, CS 61C, CS 70, and Data 8.
 * Saturday:
   * Build, freeze, and deploy the website.
-  * Make the #journal-15 channel on Slack.
+  * Make the #readings-15 channel on Slack.
 
 # Week 14
 
