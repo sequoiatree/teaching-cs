@@ -13,7 +13,7 @@ Self-reflection is an important and necessary way to improve your teaching skill
 * Concluding question (2+ paragraphs)
   * What are some ways that students struggle with learning computer science? Explain as you would to a freshman with no prior experience who is considering CS as a major.
 
-It should be 1.5 page minimum (12pt font, 1 inch margins, and single-spaced) but please do write more if you feel inclined!
+It should be 1.5 page minimum (12pt font, 1 inch margins, and single-spaced) but please do write more if you feel inclined! Submit it on bCourses under the assignment "Week {{ week.number }} Homework" as usual.
 
 We use this essay to assess what you have learned over the course of the semester and what we can improve for next time. Sometimes, when tutor / TA hiring rolls around, professors also ask us how you are as a teacher. In order to answer that question, one thing we might draw from is your final essay.
 
@@ -21,9 +21,11 @@ We use this essay to assess what you have learned over the course of the semeste
 
 The final project consists of two parts: curriculum improvement, and a final review lesson plan. The quality of your submission may also factor into our willingness to provide staff recommendations.
 
+Submit it on bCourses under the assignment "Final Project".
+
 ## Part 1: Curriculum improvement
 
-This part of the project is worth 50% of your project grade. Submit it in a document called "Curriculum Improvement" in your homework folder. **Note that this part of the project will not be graded lightly.**
+This part of the project is worth 50% of your project grade. **Note that this part of the project will not be graded lightly.**
 
 * First review the readings assigned throughout the semester. Find a teaching-related resource (e.g. reading, TED talk, etc.) available online, which has not already been assigned. It should be both useful and relevant to at least one of the topics we've covered this semester.
   * Provide the title of the reading you found, and a link to it.
@@ -40,7 +42,7 @@ This part of the project is worth 50% of your project grade. Submit it in a docu
 
 ## Part 2: Final review lesson plan
 
-This part of the project is worth 50% of your project grade. Submit it in a document called "Lesson Plan" in your homework folder.
+This part of the project is worth 50% of your project grade.
 
 * Pick one topic from a CS class you're teaching. It can be  as broad or specific as you desire, within reason. (E.g. "recursion", "recursion on multiple parameters", or even "impure recursion on multiple parameters" are all equally fine.)
 * Make a 90-minute final review lesson plan for the topic you choose.

@@ -23,4 +23,4 @@ This week you'll be shadowing a TA's discussion section! This is time sensitive,
   * How do they balance lecture against practice? How do they manage their time?
   * Are the students engaged? How does the TA try to keep them busy?
   * How does the TA handle teaching to a section where some students know the material better than others? Do they focus on the middle of the distribution, cater to one end, or do they teach to everyone equally?
-* When you finish, convert your notes into a review of the discussion session. There's no specific format: free-form, bullet list, etc are all fine. Put it in your homework folder. You do not have to disclose your review to the TA you shadowed, unless you want to do so.
+* When you finish, convert your notes into a review of the discussion session. There's no specific format: free-form, bullet list, etc are all fine. Submit it on bCourses like usual. You do not have to disclose your review to the TA you shadowed, unless you want to do so.
