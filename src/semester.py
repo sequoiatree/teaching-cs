@@ -37,6 +37,7 @@ META = {
     'FINAL_SURVEY': 'https://goo.gl/forms/TOyNWeMCWsrtghdw2',
     'TUTORING_FEEDBACK': 'https://goo.gl/forms/3wPJsyHZz9Butyw52',
     'WEEKS_OF_TUTORING': 13,
+    'SAMPLE_EMAIL': 'https://goo.gl/RyPyu3',
 }
 
 TIME_UNTIL_RELEASED = {
