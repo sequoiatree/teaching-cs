@@ -1,6 +1,8 @@
-# UC Berkeley's CS 370: Introduction to Teaching Computer Science
+# Introduction to Teaching Computer Science
 
-The official repository for UC Berkeley's CS 370: Introduction to Teaching Computer Science.
+The curriculum and infrastructure — including policies, website, assignments, assessments, etc. — for a class on teaching computer science effectively.
+
+Temporarily, some materials are available at [https://goo.gl/b7pgC9](https://goo.gl/b7pgC9). Soon they will all be available on this repository, for ease of access.
 
 ## Viewing the staff timeline
 
