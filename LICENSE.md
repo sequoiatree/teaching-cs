@@ -1,1 +1,1 @@
-All content on this repository is protected under a [Creative Commons BY 4.0 license](https://creativecommons.org/licenses/by/4.0/).
+All content on this repository is protected under a [Creative Commons BY 4.0 license](https://creativecommons.org/licenses/by/4.0/). This means you're free to copy and use any of my materials, so long as you provide a link back to this repository.
